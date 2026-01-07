@@ -1,0 +1,164 @@
+{
+    "multiSelect": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "MCQ-MultiSelect",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Select all correct answers</p>",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "Option A",
+                "score": "1"
+            },
+            {
+                "option_index": 2,
+                "option_value": "Option B",
+                "score": "1"
+            },
+            {
+                "option_index": 3,
+                "option_value": "Option C",
+                "score": "0"
+            },
+            {
+                "option_index": 4,
+                "option_value": "Option D",
+                "score": "0"
+            }
+        ],
+        "correct_answer": [
+            1,
+            2
+        ]
+    },
+    "htmlStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "MCQ-SingleSelect",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>What is <strong>2 + 2</strong>?</p><img src=\"http://example.com/math.jpg\" />",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "3",
+                "score": "0"
+            },
+            {
+                "option_index": 2,
+                "option_value": "4",
+                "score": "1"
+            }
+        ],
+        "correct_answer": [
+            2
+        ]
+    },
+    "videoInstruction": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "MCQ-SingleSelect",
+        "subject_no": "2",
+        "class": 6,
+        "instruction": "<p><video title=\"\" src=\"https://example.com/video.mp4\" controls=\"controls\"></video></p>",
+        "stem": "<p>Watch and answer</p>",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "A",
+                "score": "0"
+            },
+            {
+                "option_index": 2,
+                "option_value": "B",
+                "score": "1"
+            }
+        ],
+        "correct_answer": [
+            2
+        ]
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "language_code": "hi",
+        "question_type": "MCQ-SingleSelect",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>2 + 2 क्या है?</p>",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "3",
+                "score": "0"
+            },
+            {
+                "option_index": 2,
+                "option_value": "4",
+                "score": "1"
+            }
+        ],
+        "correct_answer": [
+            2
+        ]
+    },
+    "fixedOptions": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "MCQ-SingleSelect",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Select answer</p>",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "A",
+                "score": "0",
+                "is_fixed": true
+            },
+            {
+                "option_index": 2,
+                "option_value": "B",
+                "score": "1",
+                "is_fixed": false
+            },
+            {
+                "option_index": 3,
+                "option_value": "C",
+                "score": "0"
+            },
+            {
+                "option_index": 4,
+                "option_value": "D",
+                "score": "0"
+            }
+        ],
+        "correct_answer": [
+            2
+        ]
+    },
+    "minOptions": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "MCQ-SingleSelect",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>True or False</p>",
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "True",
+                "score": "1"
+            },
+            {
+                "option_index": 2,
+                "option_value": "False",
+                "score": "0"
+            }
+        ],
+        "correct_answer": [
+            1
+        ]
+    }
+}

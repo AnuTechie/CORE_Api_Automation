@@ -1,0 +1,33 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "MCQ-SingleSelect",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>What is 2 + 2?</p>",
+    "options": [
+        {
+            "option_index": 1,
+            "option_value": "3",
+            "score": "0"
+        },
+        {
+            "option_index": 2,
+            "option_value": "4",
+            "score": "1"
+        },
+        {
+            "option_index": 3,
+            "option_value": "5",
+            "score": "0"
+        },
+        {
+            "option_index": 4,
+            "option_value": "6",
+            "score": "0"
+        }
+    ],
+    "correct_answer": [
+        2
+    ]
+}

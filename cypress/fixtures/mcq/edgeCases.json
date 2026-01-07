@@ -1,0 +1,65 @@
+{
+    "longStem": {
+        "stemLength": 5000,
+        "description": "Very long stem with 5000 characters"
+    },
+    "specialChars": {
+        "stem": "<p>What is 2 + 2? (Use: @#$%^&*)</p>"
+    },
+    "unicodeStem": {
+        "stem": "<p>गणित का प्रश्न: 2 + 2 = ? 🔢📐</p>"
+    },
+    "maxOptions": {
+        "optionCount": 10,
+        "description": "10 options in array"
+    },
+    "classAsString": {
+        "class": "6"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "negativeClass": {
+        "class": -1
+    },
+    "zeroMaxScore": {
+        "max_score": 0
+    },
+    "negativeMaxScore": {
+        "max_score": -5
+    },
+    "emptyStem": {
+        "stem": ""
+    },
+    "sqlInjection": {
+        "stem": "'; DROP TABLE questions; --"
+    },
+    "xssAttempt": {
+        "option_value": "<script>alert(\"xss\")</script>"
+    },
+    "duplicateOptionIndex": {
+        "options": [
+            {
+                "option_index": 1,
+                "option_value": "A",
+                "score": "0"
+            },
+            {
+                "option_index": 1,
+                "option_value": "B",
+                "score": "1"
+            }
+        ]
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "origin_content_row_id": "Q00001_en_1"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "origin_content_row_id": "Q00001_en_1"
+    }
+}
