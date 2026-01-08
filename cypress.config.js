@@ -7,6 +7,7 @@ module.exports = defineConfig({
     specPattern: [
       "cypress/e2e/login.cy.js",
       "cypress/e2e/mcq_question.cy.js",
+      "cypress/e2e/matching_question.cy.js",
     ],
     setupNodeEvents(on, config) {
       // PostgreSQL Database Task

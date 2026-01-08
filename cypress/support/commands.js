@@ -190,3 +190,54 @@ Cypress.Commands.add('getContentWithLanguages', (contentId, languages) => {
 Cypress.Commands.add('getContentEncrypted', (contentId, encrypt) => {
     return cy.getContent(contentId, { encrypt: encrypt });
 });
+
+// ***********************************************
+// Matching Question API Commands
+// ***********************************************
+
+/**
+ * Create Matching Question API Command
+ * @param {Object} payload - Matching question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createMatching', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/matching',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Matching with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'matching/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createMatchingFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createMatching(payload, overrides);
+    });
+});
+
+/**
+ * Create Matching and store content_id
+ * Creates Matching question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Matching question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createMatchingAndStore', (payload, overrides = {}) => {
+    return cy.createMatching(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_MATCHING_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_MATCHING_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
