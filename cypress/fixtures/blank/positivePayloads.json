@@ -1,0 +1,507 @@
+{
+    "singleBlank": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>What is 5 + 3? <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Basic addition",
+        "explanation": "5 + 3 = 8",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 3,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 3,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "8"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "multipleBlanks": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Complete: <fill-in-the-blank id=\"b1\"></fill-in-the-blank> + <fill-in-the-blank id=\"b2\"></fill-in-the-blank> = 10</p>",
+        "max_score": 2,
+        "testing_objective": "Number pairs that sum to 10",
+        "explanation": "Various combinations add up to 10",
+        "blank_count": 2,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 3,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 3,
+                "fracbox": false
+            },
+            {
+                "blank_index": "b2",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 3,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 3,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "5",
+                "6",
+                "7"
+            ],
+            "b2": [
+                "5",
+                "4",
+                "3"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "dragTemplate": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "drag",
+        "stem": "<p>Drag the correct word: The sky is <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Color identification",
+        "explanation": "The sky is blue",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "blue",
+                "Blue"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "alphabetsCharSet": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>What is the capital of France? <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Geography knowledge",
+        "explanation": "Paris is the capital of France",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 15,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 15,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "Paris",
+                "paris"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "alphanumericCharSet": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>What is the model number? <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Alphanumeric input",
+        "explanation": "Model ABC123",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphanumeric",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "ABC123"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": true,
+            "allow_extra_spaces": false,
+            "ignore_punctuation": false,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "numbersWithMathSymbols": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Simplify: 3 × 4 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Multiplication",
+        "explanation": "3 × 4 = 12",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers_with_math_symbols",
+                "score": 1,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "12"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "customCharSet": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Enter grade (A-F): <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Grade input",
+        "explanation": "Valid grades are A, B, C, D, E, F",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "custom",
+                "score": 1,
+                "size": 2,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 2,
+                "fracbox": false,
+                "custom_char_set": [
+                    "A",
+                    "B",
+                    "C",
+                    "D",
+                    "E",
+                    "F"
+                ]
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "A"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": true,
+            "allow_extra_spaces": false,
+            "ignore_punctuation": false,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "fractionsCharSet": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>What is half of 1? <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Fraction understanding",
+        "explanation": "Half of 1 is 1/2",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "fractions",
+                "score": 1,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": true
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "1/2",
+                "0.5"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "hi",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>भारत की राजधानी <fill-in-the-blank id=\"b1\"></fill-in-the-blank> है।</p>",
+        "max_score": 1,
+        "testing_objective": "भारत की राजधानी",
+        "explanation": "भारत की राजधानी नई दिल्ली है",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "all",
+                "score": 1,
+                "size": 20,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 20,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "नई दिल्ली",
+                "दिल्ली"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "withContainerIds": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "container_ids": [
+            "A00001",
+            "A00002"
+        ],
+        "stem": "<p>Based on the passage, the answer is <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Passage comprehension",
+        "explanation": "Answer from the passage",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "all",
+                "score": 1,
+                "size": 20,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 20,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "passage answer"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "caseSensitive": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Enter your name in uppercase: <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Case sensitivity test",
+        "explanation": "Name must be uppercase",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 20,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 20,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "JOHN"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": true,
+            "allow_extra_spaces": false,
+            "ignore_punctuation": false,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "multipleCorrectAnswers": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Name a primary color: <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Color knowledge",
+        "explanation": "Red, Blue, and Yellow are primary colors",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "red",
+                "Red",
+                "blue",
+                "Blue",
+                "yellow",
+                "Yellow"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "project_id": 1,
+    "question_type": "Blank",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 1,
+    "class": "6",
+    "template": "type",
+    "container_ids": [
+        "A00002W"
+    ],
+    "keyword_ids": [
+        2
+    ],
+    "instruction": "<p>Complete the equation by filling in the blanks.</p>",
+    "instruction_voiceover": {
+        "en-GB": "instruction.wav",
+        "en-IN": "instruction_in.wav"
+    },
+    "stem": "Version 1 4x + 6y = 15. Complete the table below:<table><tbody><tr><td> x </td><td> 3 </td><td><fill-in-the-blank id=\"b2\"></fill-in-the-blank></td></tr><tr><td> y </td><td><fill-in-the-blank id=\"b1\"></fill-in-the-blank></td><td> 1 </td></tr></tbody></table>",
+    "stem_voiceover": {
+        "en-GB": "stem.wav",
+        "en-IN": "stem_in.wav"
+    },
+    "max_score": 10,
+    "testing_objective": "Version 1 Assessing knowledge of linear equations.",
+    "explanation": "Version 1 For the linear equation, 4x + 6y = 15:<br>When x = 3, y = (15 - 12)/6 = 3/6 = 0.5<br>And, when y = 1, x = (15 - 6)/4 = 9/4 = 2.25",
+    "explanation_voiceover": {
+        "en-GB": "explanation.wav"
+    },
+    "blank_count": 2,
+    "blank_details": [
+        {
+            "blank_index": "b1",
+            "allowed_char_set": "custom",
+            "score": 5,
+            "size": 7,
+            "min_chars_allowed": 1,
+            "max_chars_allowed": 7,
+            "fracbox": false,
+            "custom_char_set": [
+                "a",
+                "A",
+                "9",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                ".",
+                "-"
+            ]
+        },
+        {
+            "blank_index": "b2",
+            "allowed_char_set": "custom",
+            "score": 5,
+            "size": 10,
+            "min_chars_allowed": 1,
+            "max_chars_allowed": 10,
+            "custom_char_set": [
+                "a",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "."
+            ],
+            "fracbox": false
+        }
+    ],
+    "correct_answer": {
+        "b1": [
+            "0.5",
+            "1/2"
+        ],
+        "b2": [
+            "2.25",
+            "9/4"
+        ]
+    },
+    "attributes": [
+        {
+            "id": "1",
+            "value": "Medium"
+        },
+        {
+            "id": "4",
+            "value": "2"
+        }
+    ],
+    "skill_trees": [
+        {
+            "id": "ST1",
+            "value": "Linear Equations"
+        },
+        {
+            "id": "ST2",
+            "value": "Algebra"
+        }
+    ],
+    "rules": {
+        "no_duplicates": true,
+        "case_sensitive": false,
+        "allow_extra_spaces": true,
+        "ignore_punctuation": true,
+        "custom_regex": false
+    },
+    "remedial_instruction": "Review linear equations and substitution method",
+    "misconception_explanation": "Students often confuse x and y values"
+}
