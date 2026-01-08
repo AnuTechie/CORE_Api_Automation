@@ -241,3 +241,53 @@ Cypress.Commands.add('createMatchingAndStore', (payload, overrides = {}) => {
         return response;
     });
 });
+
+// =============================================
+// FILL IN THE BLANK (BLANK) API COMMANDS
+// =============================================
+
+/**
+ * Create Fill in the Blank Question
+ * @param {Object} payload - Blank question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlank', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/fill-in-the-blanks',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Blank from fixture
+ * @param {string} fixturePath - Path to fixture file
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlankFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createBlank(payload, overrides);
+    });
+});
+
+/**
+ * Create Blank and store content_id
+ * Creates Blank question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Blank question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlankAndStore', (payload, overrides = {}) => {
+    return cy.createBlank(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_BLANK_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_BLANK_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
