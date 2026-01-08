@@ -1,0 +1,86 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "context": "GJ",
+    "question_type": "Matching",
+    "subject_no": "2",
+    "class": "6",
+    "instruction": "<p>Match the items in Column A with their corresponding items in Column B.</p>",
+    "instruction_voiceover": {
+        "en-GB": "instruction.wav",
+        "en-IN": "instruction_in.wav"
+    },
+    "stem": "<p>Renu poured 1250 ml of water into a jar. Only two measurement numbers on the jar can be seen.</p><p>Which of the following shows Renu's jar with 1250 ml of water?</p>",
+    "stem_voiceover": {
+        "en-GB": "stem.wav",
+        "en-IN": "stem_in.wav"
+    },
+    "max_score": 2,
+    "explanation": "The correct matches are based on the measurement scale readings.",
+    "explanation_voiceover": {
+        "en-GB": "explanation.wav"
+    },
+    "testing_objective": "A: Read the scale incorrectly B: Read the scale correctly C: CA D: Read the scale incorrectly",
+    "match_sets": {
+        "column_a_options": [
+            {
+                "option_value": "1000 ml",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-GB": "opt_a1.wav",
+                    "en-IN": "opt_a1_in.wav"
+                }
+            },
+            {
+                "option_value": "1250 ml",
+                "option_index": 2,
+                "option_voiceover": {
+                    "en-GB": "opt_a2.wav"
+                }
+            },
+            {
+                "option_value": "1500 ml",
+                "option_index": 3
+            }
+        ],
+        "column_b_options": [
+            {
+                "option_value": "One liter",
+                "option_index": 1
+            },
+            {
+                "option_value": "One and a quarter liter",
+                "option_index": 2
+            },
+            {
+                "option_value": "One and a half liter",
+                "option_index": 3
+            }
+        ]
+    },
+    "column_a_title": "Measurement (ml)",
+    "column_b_title": "Description",
+    "correct_answer": [
+        {
+            "column_a_index": 1,
+            "column_b_index": 1
+        },
+        {
+            "column_a_index": 2,
+            "column_b_index": 2
+        },
+        {
+            "column_a_index": 3,
+            "column_b_index": 3
+        }
+    ],
+    "shuffle": true,
+    "show_titles": true,
+    "misconception_explanation": "Students often misread the scale markings.",
+    "keyword_ids": [
+        1,
+        2,
+        3
+    ],
+    "template": "standard"
+}

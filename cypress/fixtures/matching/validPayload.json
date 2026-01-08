@@ -1,0 +1,51 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "context": "GJ",
+    "question_type": "Matching",
+    "subject_no": "2",
+    "class": "6",
+    "stem": "<p>Match the following items correctly.</p>",
+    "max_score": 1,
+    "explanation": "Match each item correctly based on the relationship.",
+    "testing_objective": "Matching items correctly",
+    "match_sets": {
+        "column_a_options": [
+            {
+                "option_value": "Apple",
+                "option_index": 1
+            },
+            {
+                "option_value": "Banana",
+                "option_index": 2
+            }
+        ],
+        "column_b_options": [
+            {
+                "option_value": "Red fruit",
+                "option_index": 1
+            },
+            {
+                "option_value": "Yellow fruit",
+                "option_index": 2
+            }
+        ]
+    },
+    "column_a_title": "Fruits",
+    "correct_answer": [
+        {
+            "column_a_index": 1,
+            "column_b_index": 1
+        },
+        {
+            "column_a_index": 2,
+            "column_b_index": 2
+        }
+    ],
+    "shuffle": false,
+    "show_titles": false,
+    "misconception_explanation": "Common misconception about fruit colors",
+    "keyword_ids": [
+        2
+    ]
+}

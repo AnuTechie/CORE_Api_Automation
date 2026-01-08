@@ -24,8 +24,8 @@ describe('MCQ Question API Tests', () => {
         // Login and store auth token first
         cy.loginAndStoreTokens(
             Cypress.env('USERNAME'),
-            Cypress.env('PASSWORD'),
-            Cypress.env('PRODUCT_ID')
+            Cypress.env('PASSWORD')
+            //  Cypress.env('PRODUCT_ID')
         ).then((response) => {
             expect(response.status).to.eq(200);
         });

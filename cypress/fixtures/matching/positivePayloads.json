@@ -1,0 +1,448 @@
+{
+    "singlePair": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match the single pair</p>",
+        "max_score": 1,
+        "explanation": "Match Dog with Barks.",
+        "testing_objective": "Match animals with sounds",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Dog",
+                    "option_index": 1
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Barks",
+                    "option_index": 1
+                }
+            ]
+        },
+        "column_a_title": "Animal",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "Understanding animal sounds",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "multiPair": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match the animals with their sounds</p>",
+        "max_score": 4,
+        "explanation": "Each animal makes a unique sound.",
+        "testing_objective": "Match animals with sounds",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Dog",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Cat",
+                    "option_index": 2
+                },
+                {
+                    "option_value": "Cow",
+                    "option_index": 3
+                },
+                {
+                    "option_value": "Lion",
+                    "option_index": 4
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Barks",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Meows",
+                    "option_index": 2
+                },
+                {
+                    "option_value": "Moos",
+                    "option_index": 3
+                },
+                {
+                    "option_value": "Roars",
+                    "option_index": 4
+                }
+            ]
+        },
+        "column_a_title": "Animals",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            },
+            {
+                "column_a_index": 3,
+                "column_b_index": 3
+            },
+            {
+                "column_a_index": 4,
+                "column_b_index": 4
+            }
+        ],
+        "shuffle": true,
+        "show_titles": false,
+        "misconception_explanation": "Common mistakes in animal sounds",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "withTitles": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match the capital cities with their countries</p>",
+        "max_score": 3,
+        "explanation": "Match each capital city with its country.",
+        "testing_objective": "Geography matching",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Paris",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Tokyo",
+                    "option_index": 2
+                },
+                {
+                    "option_value": "Delhi",
+                    "option_index": 3
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "France",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Japan",
+                    "option_index": 2
+                },
+                {
+                    "option_value": "India",
+                    "option_index": 3
+                }
+            ]
+        },
+        "column_a_title": "Capital City",
+        "column_b_title": "Country",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            },
+            {
+                "column_a_index": 3,
+                "column_b_index": 3
+            }
+        ],
+        "shuffle": true,
+        "show_titles": true,
+        "misconception_explanation": "Students often confuse Asian capitals",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "language_code": "hi",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>निम्नलिखित को मिलाएं</p>",
+        "max_score": 2,
+        "explanation": "फलों को उनके रंगों से मिलाएं।",
+        "testing_objective": "फल और रंग मिलान",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "सेब",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "केला",
+                    "option_index": 2
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "लाल फल",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "पीला फल",
+                    "option_index": 2
+                }
+            ]
+        },
+        "column_a_title": "फल",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "रंग पहचान में गलती",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "htmlContent": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match the <strong>mathematical symbols</strong> with their meanings</p>",
+        "max_score": 2,
+        "explanation": "+ means addition, - means subtraction.",
+        "testing_objective": "Math symbols matching",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "<strong>+</strong>",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "<em>−</em>",
+                    "option_index": 2
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Addition",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Subtraction",
+                    "option_index": 2
+                }
+            ]
+        },
+        "column_a_title": "Symbol",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "Symbol confusion",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "withVoiceover": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match with audio support</p>",
+        "stem_voiceover": {
+            "en-GB": "stem.wav"
+        },
+        "max_score": 2,
+        "explanation": "Match the words with their numerical values.",
+        "testing_objective": "Number word matching",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "One",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-GB": "one.wav"
+                    }
+                },
+                {
+                    "option_value": "Two",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-GB": "two.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "1",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "2",
+                    "option_index": 2
+                }
+            ]
+        },
+        "column_a_title": "Words",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "Number word recognition",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "unequalColumns": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match (Column B has extra options)</p>",
+        "max_score": 2,
+        "explanation": "Match the animals with their sounds. One option in Column B will not be used.",
+        "testing_objective": "Matching with distractors",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Cat",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Dog",
+                    "option_index": 2
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Meows",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Barks",
+                    "option_index": 2
+                },
+                {
+                    "option_value": "Roars",
+                    "option_index": 3
+                }
+            ]
+        },
+        "column_a_title": "Animals",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": true,
+        "show_titles": false,
+        "misconception_explanation": "Distractor options",
+        "keyword_ids": [
+            2
+        ]
+    },
+    "withMaxScore": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Match the shapes with their sides</p>",
+        "max_score": 2,
+        "explanation": "A triangle has 3 sides, a square has 4 sides.",
+        "testing_objective": "Shape properties",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Triangle",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "Square",
+                    "option_index": 2
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "3 sides",
+                    "option_index": 1
+                },
+                {
+                    "option_value": "4 sides",
+                    "option_index": 2
+                }
+            ]
+        },
+        "column_a_title": "Shape",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "Counting sides incorrectly",
+        "keyword_ids": [
+            2
+        ]
+    }
+}

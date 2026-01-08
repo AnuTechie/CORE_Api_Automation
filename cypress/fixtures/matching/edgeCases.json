@@ -1,0 +1,140 @@
+{
+    "specialChars": {
+        "stem": "<p>Match: @#$%^&*() with symbols</p>",
+        "option_value": "Option @#$%^&*()"
+    },
+    "unicodeStem": {
+        "stem": "<p>मिलान करें: 🔢 📐 गणित प्रश्न</p>"
+    },
+    "longStem": {
+        "description": "Very long stem with 3000 characters",
+        "stemLength": 3000
+    },
+    "emptyStrings": {
+        "stem": "",
+        "option_value": ""
+    },
+    "sqlInjection": {
+        "stem": "'; DROP TABLE questions; --",
+        "option_value": "'; DELETE FROM matching; --"
+    },
+    "xssAttempt": {
+        "stem": "<script>alert('xss')</script>",
+        "option_value": "<img src=x onerror=alert('xss')>"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "classAsInteger": {
+        "class": 6
+    },
+    "negativeOptionIndex": {
+        "option_index": -1
+    },
+    "zeroOptionIndex": {
+        "option_index": 0
+    },
+    "duplicateOptionIndex": {
+        "column_a_options": [
+            {
+                "option_value": "A",
+                "option_index": 1
+            },
+            {
+                "option_value": "B",
+                "option_index": 1
+            }
+        ]
+    },
+    "mismatchedCorrectAnswer": {
+        "correct_answer": [
+            {
+                "column_a_index": 99,
+                "column_b_index": 99
+            }
+        ]
+    },
+    "shuffleAsString": {
+        "shuffle": "true"
+    },
+    "showTitlesAsString": {
+        "show_titles": "false"
+    },
+    "emptyMatchSets": {
+        "column_a_options": [],
+        "column_b_options": []
+    },
+    "emptyCorrectAnswer": {
+        "correct_answer": []
+    },
+    "nullValues": {
+        "stem": null,
+        "match_sets": null
+    },
+    "extraFields": {
+        "extraField": "should be ignored",
+        "anotherField": 12345
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "origin_content_row_id": "Q00001_en_1"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "origin_content_row_id": "Q00001_en_1"
+    },
+    "maxPairs": {
+        "description": "Maximum number of matching pairs (10)",
+        "pairCount": 10
+    },
+    "missingColumnAIndex": {
+        "column_a_index": null,
+        "column_b_index": 1
+    },
+    "missingColumnBIndex": {
+        "column_a_index": 1,
+        "column_b_index": null
+    },
+    "validBasePayload": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Matching",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Edge case test</p>",
+        "max_score": 1,
+        "explanation": "Edge case explanation",
+        "testing_objective": "Edge case testing",
+        "match_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "A",
+                    "option_index": 1
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "B",
+                    "option_index": 1
+                }
+            ]
+        },
+        "column_a_title": "Column A",
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            }
+        ],
+        "shuffle": false,
+        "show_titles": false,
+        "misconception_explanation": "Edge case misconception",
+        "keyword_ids": [
+            2
+        ]
+    }
+}
