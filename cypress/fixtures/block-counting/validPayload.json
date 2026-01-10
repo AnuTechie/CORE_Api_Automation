@@ -1,0 +1,13 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "BlockCounting",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>How many blocks are in the figure?</p>",
+    "image_url": "https://example.com/images/block_counting_sample.png",
+    "answer_type": "numeric",
+    "correct_answer": 12,
+    "min_value": 0,
+    "max_value": 100
+}

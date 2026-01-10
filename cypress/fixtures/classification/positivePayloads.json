@@ -1,0 +1,268 @@
+{
+    "twoCategories": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "Classification",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Sort into odd and even:</p>",
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "Odd",
+                "category_id": "cat_1"
+            },
+            {
+                "category_index": 2,
+                "category_name": "Even",
+                "category_id": "cat_2"
+            }
+        ],
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>1</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>2</p>",
+                "item_id": "item_2"
+            },
+            {
+                "item_index": 3,
+                "item_value": "<p>3</p>",
+                "item_id": "item_3"
+            },
+            {
+                "item_index": 4,
+                "item_value": "<p>4</p>",
+                "item_id": "item_4"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1",
+                "item_3"
+            ],
+            "cat_2": [
+                "item_2",
+                "item_4"
+            ]
+        },
+        "shuffle": true
+    },
+    "fiveCategories": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "Classification",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Classify by continent:</p>",
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "Asia",
+                "category_id": "cat_1"
+            },
+            {
+                "category_index": 2,
+                "category_name": "Europe",
+                "category_id": "cat_2"
+            },
+            {
+                "category_index": 3,
+                "category_name": "Africa",
+                "category_id": "cat_3"
+            },
+            {
+                "category_index": 4,
+                "category_name": "America",
+                "category_id": "cat_4"
+            },
+            {
+                "category_index": 5,
+                "category_name": "Australia",
+                "category_id": "cat_5"
+            }
+        ],
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>India</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>France</p>",
+                "item_id": "item_2"
+            },
+            {
+                "item_index": 3,
+                "item_value": "<p>Egypt</p>",
+                "item_id": "item_3"
+            },
+            {
+                "item_index": 4,
+                "item_value": "<p>Brazil</p>",
+                "item_id": "item_4"
+            },
+            {
+                "item_index": 5,
+                "item_value": "<p>Sydney</p>",
+                "item_id": "item_5"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ],
+            "cat_2": [
+                "item_2"
+            ],
+            "cat_3": [
+                "item_3"
+            ],
+            "cat_4": [
+                "item_4"
+            ],
+            "cat_5": [
+                "item_5"
+            ]
+        },
+        "shuffle": true
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "language_code": "hi",
+        "question_type": "Classification",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>वर्गीकृत करें:</p>",
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "फल",
+                "category_id": "cat_1"
+            },
+            {
+                "category_index": 2,
+                "category_name": "सब्जियां",
+                "category_id": "cat_2"
+            }
+        ],
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>सेब</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>गाजर</p>",
+                "item_id": "item_2"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ],
+            "cat_2": [
+                "item_2"
+            ]
+        },
+        "shuffle": true
+    },
+    "withImages": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "Classification",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Classify shapes:</p>",
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "Circle",
+                "category_id": "cat_1",
+                "image_url": "https://example.com/circle.png"
+            },
+            {
+                "category_index": 2,
+                "category_name": "Square",
+                "category_id": "cat_2",
+                "image_url": "https://example.com/square.png"
+            }
+        ],
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>Ball</p>",
+                "item_id": "item_1",
+                "image_url": "https://example.com/ball.png"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>Box</p>",
+                "item_id": "item_2",
+                "image_url": "https://example.com/box.png"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ],
+            "cat_2": [
+                "item_2"
+            ]
+        },
+        "shuffle": true
+    },
+    "emptyCategoryAllowed": {
+        "project_id": 1,
+        "language_code": "en",
+        "question_type": "Classification",
+        "subject_no": "2",
+        "class": 6,
+        "stem": "<p>Classify (some categories may be empty):</p>",
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "Positive",
+                "category_id": "cat_1"
+            },
+            {
+                "category_index": 2,
+                "category_name": "Negative",
+                "category_id": "cat_2"
+            },
+            {
+                "category_index": 3,
+                "category_name": "Zero",
+                "category_id": "cat_3"
+            }
+        ],
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>5</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>-3</p>",
+                "item_id": "item_2"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ],
+            "cat_2": [
+                "item_2"
+            ],
+            "cat_3": []
+        },
+        "shuffle": true
+    }
+}

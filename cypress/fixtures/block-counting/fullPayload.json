@@ -1,0 +1,29 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "BlockCounting",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>Count the total number of blocks in this 3D structure.</p>",
+    "instruction": "<p>Look carefully at all visible and hidden blocks.</p>",
+    "image_url": "https://example.com/images/block_counting_full.png",
+    "answer_type": "numeric",
+    "correct_answer": 24,
+    "min_value": 0,
+    "max_value": 100,
+    "max_score": 1,
+    "difficulty_level": "medium",
+    "keyword_ids": [
+        1,
+        2,
+        3
+    ],
+    "container_ids": [
+        101,
+        102
+    ],
+    "explanation": "<p>There are 24 blocks in total including the hidden ones.</p>",
+    "voiceover_stem": "https://example.com/audio/stem_audio.mp3",
+    "voiceover_instruction": "https://example.com/audio/instruction_audio.mp3",
+    "voiceover_explanation": "https://example.com/audio/explanation_audio.mp3"
+}

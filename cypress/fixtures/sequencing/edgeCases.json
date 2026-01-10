@@ -1,0 +1,71 @@
+{
+    "specialChars": {
+        "stem": "<p>Special @#$%^&* chars!</p>"
+    },
+    "unicodeStem": {
+        "stem": "<p>Unicode: 你好 مرحبا שלום 🎉</p>"
+    },
+    "sqlInjection": {
+        "stem": "<p>'; DROP TABLE questions; --</p>"
+    },
+    "xssAttempt": {
+        "item_value": "<script>alert('XSS')</script>"
+    },
+    "classAsString": {
+        "class": "6"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "negativeClass": {
+        "class": -5
+    },
+    "emptyStem": {
+        "stem": ""
+    },
+    "duplicateItemIds": {
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>A</p>",
+                "item_id": "duplicate"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>B</p>",
+                "item_id": "duplicate"
+            }
+        ]
+    },
+    "duplicateItemIndex": {
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>A</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 1,
+                "item_value": "<p>B</p>",
+                "item_id": "item_2"
+            }
+        ]
+    },
+    "sequenceWithInvalidIndex": {
+        "correct_sequence": [
+            1,
+            2,
+            99
+        ]
+    },
+    "sequenceWithDuplicates": {
+        "correct_sequence": [
+            1,
+            1,
+            2
+        ]
+    }
+}

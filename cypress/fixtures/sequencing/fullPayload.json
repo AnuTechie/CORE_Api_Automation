@@ -1,0 +1,64 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Sequencing",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>Order these historical events chronologically:</p>",
+    "instruction": "<p>Drag and drop the events to arrange them in chronological order.</p>",
+    "items": [
+        {
+            "item_index": 1,
+            "item_value": "<p>World War II ended</p>",
+            "item_id": "item_1",
+            "image_url": "https://example.com/images/ww2.png"
+        },
+        {
+            "item_index": 2,
+            "item_value": "<p>Internet was invented</p>",
+            "item_id": "item_2",
+            "image_url": "https://example.com/images/internet.png"
+        },
+        {
+            "item_index": 3,
+            "item_value": "<p>Man landed on the moon</p>",
+            "item_id": "item_3",
+            "image_url": "https://example.com/images/moon.png"
+        },
+        {
+            "item_index": 4,
+            "item_value": "<p>Berlin Wall fell</p>",
+            "item_id": "item_4",
+            "image_url": "https://example.com/images/berlin.png"
+        },
+        {
+            "item_index": 5,
+            "item_value": "<p>First smartphone released</p>",
+            "item_id": "item_5",
+            "image_url": "https://example.com/images/smartphone.png"
+        }
+    ],
+    "correct_sequence": [
+        1,
+        3,
+        2,
+        4,
+        5
+    ],
+    "shuffle": true,
+    "max_score": 1,
+    "difficulty_level": "medium",
+    "keyword_ids": [
+        1,
+        2,
+        3
+    ],
+    "container_ids": [
+        101,
+        102
+    ],
+    "explanation": "<p>1945 (WWII) → 1969 (Moon Landing) → 1983 (Internet) → 1989 (Berlin Wall) → 2007 (Smartphone)</p>",
+    "voiceover_stem": "https://example.com/audio/stem_seq.mp3",
+    "voiceover_instruction": "https://example.com/audio/instruction_seq.mp3",
+    "voiceover_explanation": "https://example.com/audio/explanation_seq.mp3"
+}

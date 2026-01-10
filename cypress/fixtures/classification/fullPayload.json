@@ -1,0 +1,97 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Classification",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>Group these items into the correct categories:</p>",
+    "instruction": "<p>Drag each item to the appropriate category.</p>",
+    "categories": [
+        {
+            "category_index": 1,
+            "category_name": "Fruits",
+            "category_id": "cat_1",
+            "image_url": "https://example.com/images/fruits.png"
+        },
+        {
+            "category_index": 2,
+            "category_name": "Vegetables",
+            "category_id": "cat_2",
+            "image_url": "https://example.com/images/vegetables.png"
+        },
+        {
+            "category_index": 3,
+            "category_name": "Grains",
+            "category_id": "cat_3",
+            "image_url": "https://example.com/images/grains.png"
+        }
+    ],
+    "items": [
+        {
+            "item_index": 1,
+            "item_value": "<p>Apple</p>",
+            "item_id": "item_1",
+            "image_url": "https://example.com/images/apple.png"
+        },
+        {
+            "item_index": 2,
+            "item_value": "<p>Carrot</p>",
+            "item_id": "item_2",
+            "image_url": "https://example.com/images/carrot.png"
+        },
+        {
+            "item_index": 3,
+            "item_value": "<p>Rice</p>",
+            "item_id": "item_3",
+            "image_url": "https://example.com/images/rice.png"
+        },
+        {
+            "item_index": 4,
+            "item_value": "<p>Banana</p>",
+            "item_id": "item_4",
+            "image_url": "https://example.com/images/banana.png"
+        },
+        {
+            "item_index": 5,
+            "item_value": "<p>Broccoli</p>",
+            "item_id": "item_5",
+            "image_url": "https://example.com/images/broccoli.png"
+        },
+        {
+            "item_index": 6,
+            "item_value": "<p>Wheat</p>",
+            "item_id": "item_6",
+            "image_url": "https://example.com/images/wheat.png"
+        }
+    ],
+    "correct_classification": {
+        "cat_1": [
+            "item_1",
+            "item_4"
+        ],
+        "cat_2": [
+            "item_2",
+            "item_5"
+        ],
+        "cat_3": [
+            "item_3",
+            "item_6"
+        ]
+    },
+    "shuffle": true,
+    "max_score": 1,
+    "difficulty_level": "medium",
+    "keyword_ids": [
+        1,
+        2,
+        3
+    ],
+    "container_ids": [
+        101,
+        102
+    ],
+    "explanation": "<p>Fruits are sweet and contain seeds. Vegetables are plant parts we eat. Grains are cereal crops.</p>",
+    "voiceover_stem": "https://example.com/audio/stem_class.mp3",
+    "voiceover_instruction": "https://example.com/audio/instruction_class.mp3",
+    "voiceover_explanation": "https://example.com/audio/explanation_class.mp3"
+}

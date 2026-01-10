@@ -1,0 +1,25 @@
+{
+  "name": "core-api-automation",
+  "version": "1.0.0",
+  "description": "CORE API Automation Testing with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  },
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}
