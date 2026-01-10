@@ -1,0 +1,39 @@
+{
+    "project_id": 1,
+    "question_type": "Blank",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 1,
+    "class": "6",
+    "template": "type",
+    "stem": "<p>Fill in the blank: 2 + 2 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+    "max_score": 1,
+    "testing_objective": "Basic addition",
+    "explanation": "2 + 2 equals 4",
+    "blank_count": 1,
+    "blank_details": [
+        {
+            "blank_index": "b1",
+            "allowed_char_set": "numbers",
+            "score": 1,
+            "size": 5,
+            "min_chars_allowed": 1,
+            "max_chars_allowed": 5,
+            "fracbox": false
+        }
+    ],
+    "correct_answer": {
+        "b1": [
+            "4"
+        ]
+    },
+    "rules": {
+        "no_duplicates": true,
+        "case_sensitive": false,
+        "allow_extra_spaces": true,
+        "ignore_punctuation": true,
+        "custom_regex": false
+    },
+    "remedial_instruction": "Review basic addition",
+    "misconception_explanation": "Common calculation error"
+}

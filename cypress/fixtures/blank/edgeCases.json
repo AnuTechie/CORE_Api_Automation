@@ -1,0 +1,154 @@
+{
+    "specialChars": {
+        "stem": "<p>Special chars: @#$%^&*() <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>"
+    },
+    "unicodeStem": {
+        "stem": "<p>Unicode: 🔢 📐 数学 <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>"
+    },
+    "sqlInjection": {
+        "stem": "'; DROP TABLE questions; -- <fill-in-the-blank id=\"b1\"></fill-in-the-blank>",
+        "correct_answer_value": "'; DELETE FROM blank; --"
+    },
+    "xssAttempt": {
+        "stem": "<script>alert('xss')</script> <fill-in-the-blank id=\"b1\"></fill-in-the-blank>",
+        "correct_answer_value": "<img src=x onerror=alert('xss')>"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "classAsInteger": {
+        "class": 6
+    },
+    "invalidAllowedCharSet": {
+        "allowed_char_set": "invalid_char_set"
+    },
+    "invalidTemplate": {
+        "template": "invalid_template"
+    },
+    "blankCountMismatch": {
+        "blank_count": 3,
+        "blank_details_length": 2
+    },
+    "negativeBlankCount": {
+        "blank_count": -1
+    },
+    "zeroBlankCount": {
+        "blank_count": 0
+    },
+    "negativeScore": {
+        "score": -5
+    },
+    "negativeSize": {
+        "size": -1
+    },
+    "negativeMinChars": {
+        "min_chars_allowed": -1
+    },
+    "minGreaterThanMax": {
+        "min_chars_allowed": 10,
+        "max_chars_allowed": 5
+    },
+    "emptyBlankDetails": {
+        "blank_details": []
+    },
+    "emptyCorrectAnswer": {
+        "correct_answer": {}
+    },
+    "nullValues": {
+        "stem": null,
+        "blank_count": null
+    },
+    "extraFields": {
+        "extraField": "should be ignored",
+        "anotherField": 12345
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "origin_content_row_id": "Q00001_en_1"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "origin_content_row_id": "Q00001_en_1"
+    },
+    "validBasePayload": {
+        "project_id": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "template": "type",
+        "stem": "<p>Edge case: <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Edge case test",
+        "explanation": "Edge case explanation",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "all",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "answer"
+            ]
+        },
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "remedial_instruction": "RI",
+        "misconception_explanation": "ME"
+    },
+    "missingRulesFields": {
+        "rules": {
+            "no_duplicates": true
+        }
+    },
+    "allRulesFalse": {
+        "rules": {
+            "no_duplicates": false,
+            "case_sensitive": false,
+            "allow_extra_spaces": false,
+            "ignore_punctuation": false,
+            "custom_regex": false
+        }
+    },
+    "allRulesTrue": {
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": true,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": true
+        }
+    },
+    "rulesAsString": {
+        "rules": "invalid"
+    },
+    "fracboxTrue": {
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "fractions",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": true
+            }
+        ]
+    }
+}
