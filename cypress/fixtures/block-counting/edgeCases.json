@@ -1,0 +1,50 @@
+{
+    "specialChars": {
+        "stem": "<p>Special @#$%^&* chars in question!</p>"
+    },
+    "unicodeStem": {
+        "stem": "<p>Unicode test: 你好 مرحبا שלום 🎉</p>"
+    },
+    "sqlInjection": {
+        "stem": "<p>'; DROP TABLE questions; --</p>"
+    },
+    "xssAttempt": {
+        "stem": "<script>alert('XSS')</script>"
+    },
+    "classAsString": {
+        "class": "6"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "negativeClass": {
+        "class": -5
+    },
+    "zeroMaxScore": {
+        "max_score": 0
+    },
+    "negativeMaxScore": {
+        "max_score": -10
+    },
+    "emptyStem": {
+        "stem": ""
+    },
+    "negativeAnswer": {
+        "correct_answer": -5
+    },
+    "answerExceedsMax": {
+        "correct_answer": 150,
+        "max_value": 100
+    },
+    "answerBelowMin": {
+        "correct_answer": -10,
+        "min_value": 0
+    },
+    "minGreaterThanMax": {
+        "min_value": 100,
+        "max_value": 10
+    }
+}

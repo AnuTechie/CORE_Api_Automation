@@ -9,6 +9,9 @@ module.exports = defineConfig({
       "cypress/e2e/mcq_question.cy.js",
       "cypress/e2e/matching_question.cy.js",
       "cypress/e2e/blank_question.cy.js",
+      "cypress/e2e/block_counting_question.cy.js",
+      "cypress/e2e/sequencing_question.cy.js",
+      "cypress/e2e/classification_question.cy.js",
     ],
     setupNodeEvents(on, config) {
       // PostgreSQL Database Task

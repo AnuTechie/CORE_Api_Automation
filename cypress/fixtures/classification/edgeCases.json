@@ -1,0 +1,100 @@
+{
+    "specialChars": {
+        "stem": "<p>Special @#$%^&* chars!</p>"
+    },
+    "unicodeStem": {
+        "stem": "<p>Unicode: 你好 مرحبا שלום 🎉</p>"
+    },
+    "sqlInjection": {
+        "stem": "<p>'; DROP TABLE questions; --</p>"
+    },
+    "xssAttempt": {
+        "item_value": "<script>alert('XSS')</script>"
+    },
+    "classAsString": {
+        "class": "6"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "negativeClass": {
+        "class": -5
+    },
+    "emptyStem": {
+        "stem": ""
+    },
+    "duplicateCategoryIds": {
+        "categories": [
+            {
+                "category_index": 1,
+                "category_name": "A",
+                "category_id": "duplicate"
+            },
+            {
+                "category_index": 2,
+                "category_name": "B",
+                "category_id": "duplicate"
+            }
+        ]
+    },
+    "duplicateItemIds": {
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>A</p>",
+                "item_id": "duplicate"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>B</p>",
+                "item_id": "duplicate"
+            }
+        ]
+    },
+    "itemInMultipleCategories": {
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ],
+            "cat_2": [
+                "item_1"
+            ]
+        }
+    },
+    "itemNotInAnyCategory": {
+        "items": [
+            {
+                "item_index": 1,
+                "item_value": "<p>A</p>",
+                "item_id": "item_1"
+            },
+            {
+                "item_index": 2,
+                "item_value": "<p>B</p>",
+                "item_id": "item_2"
+            }
+        ],
+        "correct_classification": {
+            "cat_1": [
+                "item_1"
+            ]
+        }
+    },
+    "invalidItemIdInClassification": {
+        "correct_classification": {
+            "cat_1": [
+                "item_999"
+            ]
+        }
+    },
+    "invalidCategoryIdInClassification": {
+        "correct_classification": {
+            "cat_999": [
+                "item_1"
+            ]
+        }
+    }
+}

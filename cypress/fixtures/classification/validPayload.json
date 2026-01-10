@@ -1,0 +1,53 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Classification",
+    "subject_no": "2",
+    "class": 6,
+    "stem": "<p>Classify the following animals:</p>",
+    "categories": [
+        {
+            "category_index": 1,
+            "category_name": "Mammals",
+            "category_id": "cat_1"
+        },
+        {
+            "category_index": 2,
+            "category_name": "Birds",
+            "category_id": "cat_2"
+        }
+    ],
+    "items": [
+        {
+            "item_index": 1,
+            "item_value": "<p>Dog</p>",
+            "item_id": "item_1"
+        },
+        {
+            "item_index": 2,
+            "item_value": "<p>Eagle</p>",
+            "item_id": "item_2"
+        },
+        {
+            "item_index": 3,
+            "item_value": "<p>Cat</p>",
+            "item_id": "item_3"
+        },
+        {
+            "item_index": 4,
+            "item_value": "<p>Sparrow</p>",
+            "item_id": "item_4"
+        }
+    ],
+    "correct_classification": {
+        "cat_1": [
+            "item_1",
+            "item_3"
+        ],
+        "cat_2": [
+            "item_2",
+            "item_4"
+        ]
+    },
+    "shuffle": true
+}

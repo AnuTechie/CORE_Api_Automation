@@ -389,3 +389,156 @@ Cypress.Commands.add('verifyContentRowInDB', (contentRowId) => {
         return null;
     });
 });
+
+// ***********************************************
+// BLOCK COUNTING QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Block Counting Question API Command
+ * @param {Object} payload - Block Counting question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlockCounting', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/block-counting',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Block Counting with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'block-counting/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlockCountingFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createBlockCounting(payload, overrides);
+    });
+});
+
+/**
+ * Create Block Counting and store content_id
+ * Creates Block Counting question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Block Counting question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createBlockCountingAndStore', (payload, overrides = {}) => {
+    return cy.createBlockCounting(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_BLOCKCOUNTING_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_BLOCKCOUNTING_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// ***********************************************
+// SEQUENCING QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Sequencing Question API Command
+ * @param {Object} payload - Sequencing question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSequencing', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/sequencing',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Sequencing with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'sequencing/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSequencingFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createSequencing(payload, overrides);
+    });
+});
+
+/**
+ * Create Sequencing and store content_id
+ * Creates Sequencing question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Sequencing question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSequencingAndStore', (payload, overrides = {}) => {
+    return cy.createSequencing(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_SEQUENCING_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_SEQUENCING_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// ***********************************************
+// CLASSIFICATION QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Classification Question API Command
+ * @param {Object} payload - Classification question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createClassification', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/classification',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Classification with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'classification/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createClassificationFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createClassification(payload, overrides);
+    });
+});
+
+/**
+ * Create Classification and store content_id
+ * Creates Classification question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Classification question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createClassificationAndStore', (payload, overrides = {}) => {
+    return cy.createClassification(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_CLASSIFICATION_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_CLASSIFICATION_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
