@@ -291,3 +291,101 @@ Cypress.Commands.add('createBlankAndStore', (payload, overrides = {}) => {
         return response;
     });
 });
+
+// ***********************************************
+// DATABASE VERIFICATION COMMANDS
+// ***********************************************
+
+/**
+ * Execute a database query
+ * Uses the queryDatabase task defined in cypress.config.js
+ * @param {string} query - SQL query to execute
+ * @param {Array} values - Optional parameterized values for the query
+ * @returns {Cypress.Chainable} - Query result rows
+ * 
+ * @example
+ * cy.queryDB('SELECT * FROM content WHERE content_id = $1', ['Q12345'])
+ *   .then((rows) => {
+ *     expect(rows).to.have.length(1);
+ *     expect(rows[0].content_id).to.eq('Q12345');
+ *   });
+ */
+Cypress.Commands.add('queryDB', (query, values = []) => {
+    return cy.task('queryDatabase', { query, values });
+});
+
+/**
+ * Verify that content exists in the database by content_id
+ * Queries the questions table and returns the matching row
+ * @param {string} contentId - The content_id to verify (e.g., 'Q12345')
+ * @returns {Cypress.Chainable} - Database row or null if not found
+ * 
+ * @example
+ * cy.verifyContentInDB('Q12345').then((dbRow) => {
+ *     expect(dbRow).to.not.be.null;
+ *     expect(dbRow.content_id).to.eq('Q12345');
+ *     expect(dbRow.question_type).to.eq('Blank');
+ * });
+ */
+Cypress.Commands.add('verifyContentInDB', (contentId) => {
+    const query = 'SELECT * FROM questions WHERE content_id = $1';
+    return cy.queryDB(query, [contentId]).then((rows) => {
+        if (rows && rows.length > 0) {
+            return rows[0];
+        }
+        return null;
+    });
+});
+
+/**
+ * Verify specific fields of content in the database
+ * Queries the questions table and validates expected field values
+ * @param {string} contentId - The content_id to verify
+ * @param {Object} expectedFields - Object with field names and expected values
+ * @returns {Cypress.Chainable} - Database row
+ * 
+ * @example
+ * cy.verifyContentFieldsInDB('Q12345', {
+ *     question_type: 'Blank',
+ *     language_code: 'en',
+ *     project_id: 1
+ * }).then((dbRow) => {
+ *     cy.log('Content verified in database');
+ * });
+ */
+Cypress.Commands.add('verifyContentFieldsInDB', (contentId, expectedFields = {}) => {
+    return cy.verifyContentInDB(contentId).then((dbRow) => {
+        expect(dbRow, `Content with ID ${contentId} should exist in database`).to.not.be.null;
+
+        // Verify each expected field
+        Object.keys(expectedFields).forEach((fieldName) => {
+            const expectedValue = expectedFields[fieldName];
+            const actualValue = dbRow[fieldName];
+            expect(actualValue, `Field '${fieldName}' in database`).to.eq(expectedValue);
+        });
+
+        return dbRow;
+    });
+});
+
+/**
+ * Verify that content exists in the database by content_row_id
+ * Queries the questions table and returns the matching row
+ * @param {string} contentRowId - The content_row_id to verify
+ * @returns {Cypress.Chainable} - Database row or null if not found
+ * 
+ * @example
+ * cy.verifyContentRowInDB('Q12345_en_v1').then((dbRow) => {
+ *     expect(dbRow).to.not.be.null;
+ *     expect(dbRow.content_row_id).to.eq('Q12345_en_v1');
+ * });
+ */
+Cypress.Commands.add('verifyContentRowInDB', (contentRowId) => {
+    const query = 'SELECT * FROM questions WHERE content_row_id = $1';
+    return cy.queryDB(query, [contentRowId]).then((rows) => {
+        if (rows && rows.length > 0) {
+            return rows[0];
+        }
+        return null;
+    });
+});

@@ -51,6 +51,14 @@ describe('Fill in the Blank (Blank) Question API Tests', () => {
                 // Store for GET API tests later
                 createdContentId = response.body.content_id;
                 createdContentRowId = response.body.content_row_id;
+
+                // Verify content was stored in database
+                cy.verifyContentInDB(createdContentId).then((dbRow) => {
+                    expect(dbRow, 'Content should exist in database').to.not.be.null;
+                    expect(dbRow.content_id).to.eq(createdContentId);
+                    expect(dbRow.question_type).to.eq('Blank');
+                    cy.log(`✓ Content ${createdContentId} verified in database`);
+                });
             });
         });
 
@@ -59,6 +67,15 @@ describe('Fill in the Blank (Blank) Question API Tests', () => {
                 expect(response.status).to.eq(201);
                 expect(response.body).to.have.property('content_id');
                 expect(response.body).to.have.property('content_row_id');
+
+                const contentId = response.body.content_id;
+
+                // Verify content was stored in database with expected fields
+                cy.verifyContentFieldsInDB(contentId, {
+                    question_type: 'Blank'
+                }).then((dbRow) => {
+                    cy.log(`✓ Content ${contentId} with all fields verified in database`);
+                });
             });
         });
 
@@ -564,6 +581,17 @@ describe('Fill in the Blank (Blank) Question API Tests', () => {
                 expect(response.body).to.have.all.keys('content_id', 'content_row_id');
                 expect(response.body.content_id).to.match(/^Q\d+$/);
                 expect(response.body.content_row_id).to.include('_');
+
+                const contentId = response.body.content_id;
+                const contentRowId = response.body.content_row_id;
+
+                // Verify both content_id and content_row_id exist in database
+                cy.verifyContentInDB(contentId).then((dbRow) => {
+                    expect(dbRow).to.not.be.null;
+                    expect(dbRow.content_id).to.eq(contentId);
+                    expect(dbRow.content_row_id).to.eq(contentRowId);
+                    cy.log(`✓ Response structure and database entry verified for ${contentId}`);
+                });
             });
         });
 

@@ -3,7 +3,7 @@ const { Client } = require("pg");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://core.poc-ei.study",
+    baseUrl: "http://192.168.0.156:3000",
     specPattern: [
       "cypress/e2e/login.cy.js",
       "cypress/e2e/mcq_question.cy.js",
