@@ -6,12 +6,12 @@ module.exports = defineConfig({
     baseUrl: "http://192.168.0.156:3000",
     specPattern: [
       "cypress/e2e/login.cy.js",
-      "cypress/e2e/mcq_question.cy.js",
-      "cypress/e2e/matching_question.cy.js",
-      "cypress/e2e/blank_question.cy.js",
-      "cypress/e2e/block_counting_question.cy.js",
-      "cypress/e2e/sequencing_question.cy.js",
-      "cypress/e2e/classification_question.cy.js",
+      "cypress/e2e/Blank/post_blank.cy.js",
+      "cypress/e2e/MCQ/post_mcq.cy.js",
+      "cypress/e2e/Matching/post_matching.cy.js",
+      "cypress/e2e/BlockCounting/post_blockcounting.cy.js",
+      "cypress/e2e/Sequencing/post_sequencing.cy.js",
+      "cypress/e2e/Classification/post_classification.cy.js",
     ],
     setupNodeEvents(on, config) {
       // PostgreSQL Database Task
