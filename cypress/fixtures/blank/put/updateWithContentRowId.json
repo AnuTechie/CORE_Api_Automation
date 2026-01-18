@@ -1,0 +1,48 @@
+{
+    "create_new_version": false,
+    "content_row_id": "Q04341_en_1",
+    "content_details": {
+        "project_id": 1,
+        "subject_no": 1,
+        "question_type": "Blank",
+        "language_code": "en",
+        "context": "IN",
+        "class": 6,
+        "instruction": "LCUR: Specific version update",
+        "stem": "<p>LCUR update: 15 ÷ 5 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "LCUR: Testing division",
+        "explanation": "LCUR: 15 divided by 5 equals 3",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "3"
+            ]
+        },
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Easy"
+            }
+        ],
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "template": "type"
+    }
+}

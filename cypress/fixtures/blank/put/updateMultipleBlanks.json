@@ -1,0 +1,59 @@
+{
+    "create_new_version": false,
+    "content_details": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "class": "6",
+        "instruction": "Fill in the blanks",
+        "stem": "<p>Complete: The capital of France is <fill-in-the-blank id=\"b1\"></fill-in-the-blank> and the capital of Germany is <fill-in-the-blank id=\"b2\"></fill-in-the-blank></p>",
+        "max_score": 2,
+        "testing_objective": "Testing geography knowledge with multiple blanks",
+        "explanation": "Paris is the capital of France and Berlin is the capital of Germany",
+        "blank_count": 2,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            },
+            {
+                "blank_index": "b2",
+                "allowed_char_set": "alphabets",
+                "score": 1,
+                "size": 10,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 10,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "Paris",
+                "paris"
+            ],
+            "b2": [
+                "Berlin",
+                "berlin"
+            ]
+        },
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Medium"
+            }
+        ],
+        "rules": {
+            "no_duplicates": false,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "template": "type"
+    }
+}

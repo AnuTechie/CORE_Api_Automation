@@ -1,0 +1,213 @@
+{
+    "missingCreateNewVersion": {
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Missing create_new_version field</p>"
+        }
+    },
+    "missingContentDetails": {
+        "create_new_version": false
+    },
+    "invalidCreateNewVersion": {
+        "create_new_version": "not_a_boolean",
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Invalid boolean value</p>"
+        }
+    },
+    "missingLanguageCode": {
+        "create_new_version": false,
+        "content_details": {
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Missing language_code</p>",
+            "blank_count": 1,
+            "blank_details": [],
+            "correct_answer": {},
+            "rules": {},
+            "template": "type"
+        }
+    },
+    "missingClass": {
+        "create_new_version": false,
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "stem": "<p>Missing class <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+            "blank_count": 1,
+            "blank_details": [
+                {
+                    "blank_index": "b1",
+                    "allowed_char_set": "numbers",
+                    "score": 1,
+                    "size": 5,
+                    "min_chars_allowed": 1,
+                    "max_chars_allowed": 5,
+                    "fracbox": false
+                }
+            ],
+            "correct_answer": {
+                "b1": [
+                    "1"
+                ]
+            },
+            "attributes": [],
+            "rules": {
+                "no_duplicates": true,
+                "case_sensitive": false,
+                "allow_extra_spaces": true,
+                "ignore_punctuation": true,
+                "custom_regex": false
+            },
+            "template": "type"
+        }
+    },
+    "blankCountMismatch": {
+        "create_new_version": false,
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Mismatch <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+            "blank_count": 5,
+            "blank_details": [
+                {
+                    "blank_index": "b1",
+                    "allowed_char_set": "numbers",
+                    "score": 1,
+                    "size": 5,
+                    "min_chars_allowed": 1,
+                    "max_chars_allowed": 5,
+                    "fracbox": false
+                }
+            ],
+            "correct_answer": {
+                "b1": [
+                    "1"
+                ]
+            },
+            "attributes": [],
+            "rules": {
+                "no_duplicates": true,
+                "case_sensitive": false,
+                "allow_extra_spaces": true,
+                "ignore_punctuation": true,
+                "custom_regex": false
+            },
+            "template": "type"
+        }
+    },
+    "invalidTemplate": {
+        "create_new_version": false,
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Invalid template <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+            "blank_count": 1,
+            "blank_details": [
+                {
+                    "blank_index": "b1",
+                    "allowed_char_set": "numbers",
+                    "score": 1,
+                    "size": 5,
+                    "min_chars_allowed": 1,
+                    "max_chars_allowed": 5,
+                    "fracbox": false
+                }
+            ],
+            "correct_answer": {
+                "b1": [
+                    "1"
+                ]
+            },
+            "attributes": [],
+            "rules": {
+                "no_duplicates": true,
+                "case_sensitive": false,
+                "allow_extra_spaces": true,
+                "ignore_punctuation": true,
+                "custom_regex": false
+            },
+            "template": "invalid_template_type"
+        }
+    },
+    "invalidAllowedCharSet": {
+        "create_new_version": false,
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": 6,
+            "stem": "<p>Invalid char set <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+            "blank_count": 1,
+            "blank_details": [
+                {
+                    "blank_index": "b1",
+                    "allowed_char_set": "invalid_charset",
+                    "score": 1,
+                    "size": 5,
+                    "min_chars_allowed": 1,
+                    "max_chars_allowed": 5,
+                    "fracbox": false
+                }
+            ],
+            "correct_answer": {
+                "b1": [
+                    "1"
+                ]
+            },
+            "attributes": [],
+            "rules": {
+                "no_duplicates": true,
+                "case_sensitive": false,
+                "allow_extra_spaces": true,
+                "ignore_punctuation": true,
+                "custom_regex": false
+            },
+            "template": "type"
+        }
+    },
+    "emptyContentDetails": {
+        "create_new_version": false,
+        "content_details": {}
+    },
+    "invalidClassType": {
+        "create_new_version": false,
+        "content_details": {
+            "language_code": "en",
+            "context": "IN",
+            "class": "invalid_not_integer",
+            "stem": "<p>Class should be integer <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+            "blank_count": 1,
+            "blank_details": [
+                {
+                    "blank_index": "b1",
+                    "allowed_char_set": "numbers",
+                    "score": 1,
+                    "size": 5,
+                    "min_chars_allowed": 1,
+                    "max_chars_allowed": 5,
+                    "fracbox": false
+                }
+            ],
+            "correct_answer": {
+                "b1": [
+                    "1"
+                ]
+            },
+            "attributes": [],
+            "rules": {
+                "no_duplicates": true,
+                "case_sensitive": false,
+                "allow_extra_spaces": true,
+                "ignore_punctuation": true,
+                "custom_regex": false
+            },
+            "template": "type"
+        }
+    }
+}

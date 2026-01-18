@@ -1,0 +1,45 @@
+{
+    "create_new_version": false,
+    "content_details": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "class": "6",
+        "instruction": "Drag the correct answer automation",
+        "stem": "<p>Drag template: 2 × 4 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Testing multiplication with drag template",
+        "explanation": "2 multiplied by 4 equals 8",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "8"
+            ]
+        },
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Easy"
+            }
+        ],
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "template": "drag"
+    }
+}

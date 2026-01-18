@@ -27,6 +27,12 @@
             "4"
         ]
     },
+    "attributes": [
+        {
+            "id": "1",
+            "value": "Easy"
+        }
+    ],
     "rules": {
         "no_duplicates": true,
         "case_sensitive": false,

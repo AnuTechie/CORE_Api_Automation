@@ -1,0 +1,47 @@
+{
+    "create_new_version": false,
+    "content_details": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "class": "6",
+        "instruction": "Automation Updated instruction: Solve the following fill in the blank question",
+        "stem": "<p>Updated stem: Fill in the blank: 5 + 3 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 1,
+        "testing_objective": "Updated: Assessing basic arithmetic skills",
+        "explanation": "Updated: The sum of 5 and 3 is 8",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 1,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "9"
+            ]
+        },
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Easy"
+            }
+        ],
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "template": "type",
+        "remedial_instruction": "Updated: Practice addition problems",
+        "misconception_explanation": "Updated: Review basic arithmetic"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "create_new_version": true,
+    "content_details": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "class": "6",
+        "instruction": "Version 2: Complete the equation",
+        "stem": "<p>Version 2: What is 10 - 3 = <fill-in-the-blank id=\"b1\"></fill-in-the-blank></p>",
+        "max_score": 2,
+        "testing_objective": "Version 2: Testing subtraction skills",
+        "explanation": "Version 2: 10 minus 3 equals 7",
+        "blank_count": 1,
+        "blank_details": [
+            {
+                "blank_index": "b1",
+                "allowed_char_set": "numbers",
+                "score": 2,
+                "size": 5,
+                "min_chars_allowed": 1,
+                "max_chars_allowed": 5,
+                "fracbox": false
+            }
+        ],
+        "correct_answer": {
+            "b1": [
+                "7"
+            ]
+        },
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Medium"
+            }
+        ],
+        "rules": {
+            "no_duplicates": true,
+            "case_sensitive": false,
+            "allow_extra_spaces": true,
+            "ignore_punctuation": true,
+            "custom_regex": false
+        },
+        "template": "type"
+    }
+}

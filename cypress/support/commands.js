@@ -52,16 +52,19 @@ Cypress.Commands.add('loginWithEnv', () => {
 
 /**
  * Login and store tokens
- * Performs login and stores JWT tokens for subsequent requests
+ * Performs login and stores JWT tokens for subsequent requests in memory
  * @param {string} username - Username for login
  * @param {string} password - Password for login
+ * @param {string} productId - Optional product ID
  * @param {string} deviceId - Optional device ID
  * @returns {Cypress.Chainable} - API response
  */
 Cypress.Commands.add('loginAndStoreTokens', (username, password, productId = null, deviceId = null) => {
     return cy.login(username, password, productId, deviceId).then((response) => {
         if (response.status === 200) {
-            Cypress.env('ACCESS_TOKEN', response.body.jwt.accessToken);
+            const accessToken = response.body.jwt.accessToken;
+            // Store in memory for current test run
+            Cypress.env('ACCESS_TOKEN', accessToken);
         }
         return response;
     });
@@ -289,6 +292,38 @@ Cypress.Commands.add('createBlankAndStore', (payload, overrides = {}) => {
             Cypress.env('CREATED_BLANK_CONTENT_ROW_ID', response.body.content_row_id);
         }
         return response;
+    });
+});
+
+/**
+ * Update Blank Question API Command (PUT)
+ * @param {string} contentId - Content ID to update
+ * @param {Object} payload - Update payload with create_new_version and content_details
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateBlank', (contentId, payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/fill-in-the-blanks/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Blank with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} contentId - Content ID to update
+ * @param {string} fixturePath - Path to fixture file (e.g., 'blank/put/updateWithoutNewVersion')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateBlankFromFixture', (contentId, fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.updateBlank(contentId, payload, overrides);
     });
 });
 
