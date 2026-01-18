@@ -1,0 +1,447 @@
+{
+    "missingProjectId": {
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingLanguageCode": {
+        "project_id": 1,
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingQuestionType": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingSubjectNo": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingClass": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingOptions": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "missingCorrectAnswer": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "shuffle_options": false
+    },
+    "emptyOptions": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [],
+        "correct_answer": [],
+        "shuffle_options": false
+    },
+    "emptyCorrectAnswer": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [],
+        "shuffle_options": false
+    },
+    "invalidProjectId": {
+        "project_id": 99999,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "invalidLanguageCode": {
+        "project_id": 1,
+        "language_code": "xyz",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "invalidQuestionType": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "InvalidType",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "optionMissingIndex": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "optionMissingValue": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "negativeProjectId": {
+        "project_id": -1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "negativeClass": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "-6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "mismatchedCorrectAnswer": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3,
+                4
+            ]
+        ],
+        "shuffle_options": false
+    }
+}

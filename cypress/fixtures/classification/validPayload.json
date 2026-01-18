@@ -3,51 +3,74 @@
     "language_code": "en",
     "question_type": "Classification",
     "subject_no": "2",
-    "class": 6,
-    "stem": "<p>Classify the following animals:</p>",
+    "class": "6",
+    "context": "IN",
+    "template": "all_together",
+    "stem": "Classify the following into disease and symptoms",
+    "max_score": 1,
+    "explanation": "explanation",
+    "testing_objective": "A: Read the scale incorretlyB: Read the scale incorrectly.C: CAD: Read the scale incorrectly",
     "categories": [
         {
-            "category_index": 1,
-            "category_name": "Mammals",
-            "category_id": "cat_1"
+            "id": 1,
+            "name": "Disease"
         },
         {
-            "category_index": 2,
-            "category_name": "Birds",
-            "category_id": "cat_2"
+            "id": 2,
+            "name": "Symptoms"
         }
     ],
     "items": [
         {
-            "item_index": 1,
-            "item_value": "<p>Dog</p>",
-            "item_id": "item_1"
+            "id": 1,
+            "name": "Fever",
+            "item_voiceover": {
+                "en": "abc.mp3",
+                "en-ZA": "abd.mp3"
+            }
         },
         {
-            "item_index": 2,
-            "item_value": "<p>Eagle</p>",
-            "item_id": "item_2"
+            "id": 2,
+            "name": "Dengue"
         },
         {
-            "item_index": 3,
-            "item_value": "<p>Cat</p>",
-            "item_id": "item_3"
+            "id": 3,
+            "name": "Cold",
+            "item_voiceover": {
+                "hi": "abc.mp3"
+            }
         },
         {
-            "item_index": 4,
-            "item_value": "<p>Sparrow</p>",
-            "item_id": "item_4"
+            "id": 4,
+            "name": "Headache"
+        },
+        {
+            "id": 5,
+            "name": "Malaria",
+            "item_voiceover": {
+                "en-IN": "abc.mp3",
+                "en-ZA": "abd.mp3"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Cholera"
         }
     ],
-    "correct_classification": {
-        "cat_1": [
-            "item_1",
-            "item_3"
+    "correct_answer": {
+        "1": [
+            2,
+            5,
+            6
         ],
-        "cat_2": [
-            "item_2",
-            "item_4"
+        "2": [
+            1,
+            3,
+            4
         ]
     },
-    "shuffle": true
+    "option_type": "Text",
+    "keyword_ids": [
+        9
+    ]
 }
