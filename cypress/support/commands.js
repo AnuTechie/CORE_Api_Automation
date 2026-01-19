@@ -577,3 +577,39 @@ Cypress.Commands.add('createClassificationAndStore', (payload, overrides = {}) =
         return response;
     });
 });
+
+// ***********************************************
+// MATCHING PUT API COMMANDS
+// ***********************************************
+
+/**
+ * Update Matching Question API Command (PUT)
+ * @param {string} contentId - Content ID to update
+ * @param {Object} payload - Update payload with create_new_version and content_details
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateMatching', (contentId, payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/matching/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Matching with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} contentId - Content ID to update
+ * @param {string} fixturePath - Path to fixture file (e.g., 'matching/put/updateWithoutNewVersion')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateMatchingFromFixture', (contentId, fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.updateMatching(contentId, payload, overrides);
+    });
+});

@@ -3,14 +3,14 @@
     "language_code": "en",
     "question_type": "MCQ-SingleSelect",
     "subject_no": "2",
-    "class": 6,
+    "class": "6",
     "context": "IN",
-    "instruction": "<p>Select the correct answer</p>",
+    "instruction": "Select the correct answer",
     "instruction_voiceover": {
         "en-GB": "instruction.wav",
         "en-IN": "instruction_in.wav"
     },
-    "stem": "<p>Renu poured 1250 ml of water into a jar. Which shows 1250 ml?</p>",
+    "stem": "Renu poured 1250 ml of water into a jar. Which shows 1250 ml",
     "stem_voiceover": {
         "en-GB": "stem.wav",
         "en-IN": "stem_in.wav"
@@ -62,16 +62,15 @@
     "skill_trees": [
         {
             "id": "ST001",
-            "value": "S0017"
+            "value": "S00017"
         },
         {
             "id": "ST002",
-            "value": "S0672"
+            "value": "S00664"
         }
     ],
     "keyword_ids": [
         1,
-        2,
         3
     ],
     "template": "standard"

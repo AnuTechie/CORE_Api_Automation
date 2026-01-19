@@ -14,6 +14,7 @@ module.exports = defineConfig({
       "cypress/e2e/Matching/post_matching.cy.js",
       "cypress/e2e/BlockCounting/post_blockcounting.cy.js",
       "cypress/e2e/Sequencing/post_sequencing.cy.js",
+      "cypress/e2e/Matching/put_matching.cy.js",
       "cypress/e2e/Classification/post_classification.cy.js",
     ],
     setupNodeEvents(on, config) {

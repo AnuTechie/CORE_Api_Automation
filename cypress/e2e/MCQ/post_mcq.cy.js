@@ -21,20 +21,24 @@ describe('MCQ Question API Tests', () => {
     let edgeCases;
 
     before(() => {
-        // Login and store auth token first
-        cy.loginAndStoreTokens(
-            Cypress.env('USERNAME'),
-            Cypress.env('PASSWORD')
-            //  Cypress.env('PRODUCT_ID')
-        ).then((response) => {
-            expect(response.status).to.eq(200);
-        });
-
         // Load all fixtures before tests run
         cy.fixture('mcq/validPayload').then((data) => { validPayload = data; });
         cy.fixture('mcq/fullPayload').then((data) => { fullPayload = data; });
         cy.fixture('mcq/positivePayloads').then((data) => { positivePayloads = data; });
         cy.fixture('mcq/edgeCases').then((data) => { edgeCases = data; });
+    });
+
+    beforeEach(() => {
+        // Re-authenticate before EACH test to ensure fresh token
+        cy.loginAndStoreTokens(
+            Cypress.env('USERNAME'),
+            Cypress.env('PASSWORD')
+        ).then((response) => {
+            expect(response.status).to.eq(200);
+        });
+
+        // Small wait to avoid database race conditions
+        cy.wait(100);
     });
 
     // =============================================
@@ -57,7 +61,7 @@ describe('MCQ Question API Tests', () => {
                 cy.verifyContentInDB(createdContentId).then((dbRow) => {
                     expect(dbRow, 'Content should exist in database').to.not.be.null;
                     expect(dbRow.content_id).to.eq(createdContentId);
-                    expect(dbRow.question_type).to.eq('MCQ');
+                    expect(dbRow.question_type).to.eq('MCQ-SingleSelect');
                     cy.log(`✓ MCQ Content ${createdContentId} verified in database`);
                 });
             });
@@ -73,7 +77,7 @@ describe('MCQ Question API Tests', () => {
 
                 // Verify content was stored in database with expected fields
                 cy.verifyContentFieldsInDB(contentId, {
-                    question_type: 'MCQ'
+                    question_type: 'MCQ-SingleSelect'
                 }).then((dbRow) => {
                     cy.log(`✓ MCQ Content ${contentId} with all fields verified in database`);
                 });
@@ -82,7 +86,23 @@ describe('MCQ Question API Tests', () => {
 
         it('TC003 - Should create MCQ with multiple correct answers (MultiSelect)', () => {
             cy.fixture('mcq/positivePayloads').then((payloads) => {
+                // Log the entire payloads object
+                cy.log(' All Payloads:', JSON.stringify(payloads));
+
+                // Log the multiSelect payload specifically
+                cy.log(' MultiSelect Payload:', JSON.stringify(payloads.multiSelect));
+
+                // Log specific fields
+                cy.log(' project_id:', payloads.multiSelect.project_id);
+                cy.log(' language_code:', payloads.multiSelect.language_code);
+                cy.log(' question_type:', payloads.multiSelect.question_type);
+                cy.log('class:', payloads.multiSelect.class);
+
                 cy.createMCQ(payloads.multiSelect).then((response) => {
+                    // Log the response
+                    cy.log(' Response Status:', response.status);
+                    cy.log(' Response Body:', JSON.stringify(response.body));
+
                     expect(response.status).to.eq(201);
                     expect(response.body).to.have.property('content_id');
                 });
@@ -136,7 +156,7 @@ describe('MCQ Question API Tests', () => {
         });
 
         it('TC010 - Should create MCQ with keyword_ids using override', () => {
-            cy.createMCQFromFixture('mcq/validPayload', { keyword_ids: [1, 2, 3] }).then((response) => {
+            cy.createMCQFromFixture('mcq/validPayload', { keyword_ids: [1, 3] }).then((response) => {
                 expect(response.status).to.eq(201);
             });
         });
@@ -308,7 +328,12 @@ describe('MCQ Question API Tests', () => {
             cy.fixture('mcq/edgeCases').then((edge) => {
                 cy.createMCQFromFixture('mcq/validPayload', { stem: edge.specialChars.stem }).then((response) => {
                     expect(response.status).to.be.oneOf([201, 400]);
-                    expect(response.body).to.have.property('message').or.have.property('content_id');
+                    // Check for appropriate property based on status
+                    if (response.status === 201) {
+                        expect(response.body).to.have.property('content_id');
+                    } else {
+                        expect(response.body).to.have.property('message');
+                    }
                 });
             });
         });

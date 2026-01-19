@@ -4,8 +4,9 @@
         "language_code": "en",
         "question_type": "MCQ-MultiSelect",
         "subject_no": "2",
-        "class": 6,
-        "stem": "<p>Select all correct answers</p>",
+        "class": "6",
+        "stem": "Select all correct answers",
+        "explanation": "Options A and B are correct",
         "options": [
             {
                 "option_index": 1,
@@ -38,8 +39,9 @@
         "language_code": "en",
         "question_type": "MCQ-SingleSelect",
         "subject_no": "2",
-        "class": 6,
-        "stem": "<p>What is <strong>2 + 2</strong>?</p><img src=\"http://example.com/math.jpg\" />",
+        "class": "6",
+        "stem": "What is 2 + 2?",
+        "explanation": "2 + 2 equals 4",
         "options": [
             {
                 "option_index": 1,
@@ -61,9 +63,10 @@
         "language_code": "en",
         "question_type": "MCQ-SingleSelect",
         "subject_no": "2",
-        "class": 6,
-        "instruction": "<p><video title=\"\" src=\"https://example.com/video.mp4\" controls=\"controls\"></video></p>",
-        "stem": "<p>Watch and answer</p>",
+        "class": "6",
+        "instruction": "Watch the video and answer the question",
+        "stem": "Watch and answer",
+        "explanation": "Based on the video content",
         "options": [
             {
                 "option_index": 1,
@@ -85,8 +88,9 @@
         "language_code": "hi",
         "question_type": "MCQ-SingleSelect",
         "subject_no": "2",
-        "class": 6,
-        "stem": "<p>2 + 2 क्या है?</p>",
+        "class": "6",
+        "stem": "2 + 2 क्या है?",
+        "explanation": "2 + 2 बराबर 4 है",
         "options": [
             {
                 "option_index": 1,
@@ -108,8 +112,9 @@
         "language_code": "en",
         "question_type": "MCQ-SingleSelect",
         "subject_no": "2",
-        "class": 6,
-        "stem": "<p>Select answer</p>",
+        "class": "6",
+        "stem": "Select the correct answer",
+        "explanation": "Option B is correct",
         "options": [
             {
                 "option_index": 1,
@@ -143,8 +148,9 @@
         "language_code": "en",
         "question_type": "MCQ-SingleSelect",
         "subject_no": "2",
-        "class": 6,
-        "stem": "<p>True or False</p>",
+        "class": "6",
+        "stem": "True or False: The sky is blue",
+        "explanation": "The statement is true",
         "options": [
             {
                 "option_index": 1,

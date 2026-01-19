@@ -3,7 +3,8 @@
     "language_code": "en",
     "question_type": "MCQ-SingleSelect",
     "subject_no": "2",
-    "class": 6,
+    "class": "6",
+    "explanation": "expl",
     "stem": "<p>What is 2 + 2?</p>",
     "options": [
         {
