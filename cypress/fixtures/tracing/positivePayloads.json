@@ -1,0 +1,121 @@
+{
+  "singlePathTrace": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace the single path from point A to point B",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "multiplePathTrace": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace all paths in the network",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B", "C"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      },
+      {
+        "trace_path": ["X", "Y", "Z"],
+        "path_color": "#00FF00",
+        "stroke_width": 2
+      },
+      {
+        "trace_path": ["P", "Q", "R"],
+        "path_color": "#0000FF",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "withStemVoiceover": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace the path with audio guidance",
+    "stem_voiceover": {
+      "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
+    "additional_data": [
+      {
+        "trace_path": ["Start", "Middle", "End"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "withDifferentPathColors": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace paths with different colors",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B", "C"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      },
+      {
+        "trace_path": ["D", "E", "F"],
+        "path_color": "#00FF00",
+        "stroke_width": 2
+      },
+      {
+        "trace_path": ["G", "H", "I"],
+        "path_color": "#0000FF",
+        "stroke_width": 2
+      },
+      {
+        "trace_path": ["J", "K", "L"],
+        "path_color": "#FFFF00",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "hindiLanguage": {
+    "project_id": 1,
+    "language_code": "hi",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "बिंदु A से बिंदु B तक पथ को ट्रेस करें",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B", "C"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "withMaxScore": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace the path carefully",
+    "max_score": 10,
+    "additional_data": [
+      {
+        "trace_path": ["A", "B", "C", "D"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  }
+}

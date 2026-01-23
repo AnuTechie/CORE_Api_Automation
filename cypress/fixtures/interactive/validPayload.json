@@ -1,0 +1,27 @@
+{
+  "project_id": 1,
+  "language_code": "en",
+  "subject_no": "2",
+  "class": "6",
+  "question_type": "Interactive",
+  "stem": "test stem &nbsp;<interactive-content name=\"Disappearing_Objects\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+  "stem_voiceover": {
+    "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+  },
+  "template": "standard",
+  "max_score": 1,
+  "explanation": "explanation",
+  "testing_objective": "A: Read the scale incorretlyB: Read the scale incorrectly.C: CAD: Read the scale incorrectly",
+  "attributes": [
+    {
+      "id": "attr1",
+      "value": "val1"
+    }
+  ],
+  "skill_trees": [
+    {
+      "id": "skill1",
+      "value": "level1"
+    }
+  ]
+}

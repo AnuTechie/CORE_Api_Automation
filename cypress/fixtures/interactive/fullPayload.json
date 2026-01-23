@@ -1,0 +1,35 @@
+{
+  "project_id": 1,
+  "language_code": "en",
+  "subject_no": "2",
+  "class": "6",
+  "question_type": "Interactive",
+  "stem": "test stem &nbsp;<interactive-content name=\"Disappearing_Objects\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+  "stem_voiceover": {
+    "en-IN": "voiceover_full.wav"
+  },
+  "template": "standard",
+  "max_score": 5,
+  "explanation": "A full explanation for the interactive question",
+  "testing_objective": "Measure student ability to interact with widget and interpret result",
+  "attributes": [
+    {
+      "id": "difficulty",
+      "value": "medium"
+    },
+    {
+      "id": "time_allowed",
+      "value": "30"
+    }
+  ],
+  "skill_trees": [
+    {
+      "id": "skill_math_1",
+      "value": "apply"
+    },
+    {
+      "id": "skill_logical",
+      "value": "analyze"
+    }
+  ]
+}

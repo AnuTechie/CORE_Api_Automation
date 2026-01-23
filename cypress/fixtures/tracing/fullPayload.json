@@ -1,0 +1,42 @@
+{
+  "project_id": 1,
+  "language_code": "en",
+  "question_type": "Tracing",
+  "subject_no": "2",
+  "class": "3",
+  "context": "IN",
+  "stem": "Trace the complete circuit path from start to end with multiple branches.",
+  "stem_voiceover": {
+    "en-GB": "fileexampleWAV1MGwav_1411200_V1.wav",
+    "en-IN": "fileexampleWAV1MGwav_1411200_V2.wav",
+    "hi": "fileexampleWAV1MGwav_1411200_V3.wav"
+  },
+  "instruction": "Follow the path carefully and mark all nodes",
+  "instruction_voiceover": {
+    "en": "fileexampleWAV1MGwav_1411200_V1.wav",
+    "hi": "fileexampleWAV1MGwav_1411200_V2.wav"
+  },
+  "explanation": "The path traces through each node sequentially following the circuit connections",
+  "explanation_voiceover": {
+    "en": "fileexampleWAV1MGwav_1411200_V1.wav",
+    "hi": "fileexampleWAV1MGwav_1411200_V2.wav"
+  },
+  "testing_objective": "Test ability to trace complex circuit paths",
+  "max_score": 5,
+  "template": "standard",
+  "keyword_ids": [1, 2, 3],
+  "remedial_instruction": "Review circuit tracing basics",
+  "misconception_explanation": "Common mistake: skipping intermediate nodes",
+  "additional_data": [
+    {
+      "trace_path": ["Start", "Node1", "Node2", "Node3", "End"],
+      "path_color": "#FF0000",
+      "stroke_width": 2
+    },
+    {
+      "trace_path": ["Start", "NodeA", "NodeB", "End"],
+      "path_color": "#0000FF",
+      "stroke_width": 3
+    }
+  ]
+}

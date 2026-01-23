@@ -1,0 +1,44 @@
+{
+  "project_id": 1,
+  "language_code": "en",
+  "question_type": "Operations-Grid",
+  "subject_no": "2",
+  "class": 3,
+  "context": "IN",
+  "stem": "Solve the following operation: 500 * 40",
+  "stem_voiceover": {
+    "en-GB": "fileexampleWAV1MGwav_1411200_V1.wav",
+    "en-IN": "fileexampleWAV1MGwav_1411200_V2.wav"
+  },
+  "first_number": "500",
+  "second_number": "40",
+  "operation_type": "multiply",
+  "correct_answer": 20000,
+  "max_score": 5,
+  "explanation": "Multiply 500 by 40 to get 20000",
+  "testing_objective": "Test multiplication of large numbers",
+  "instruction": "Perform the arithmetic operation",
+  "instruction_voiceover": {
+    "en-GB": "fileexampleWAV1MGwav_1411200_V1.wav"
+  },
+  "attributes": [
+    {
+      "id": "1",
+      "value": "Medium"
+    },
+    {
+      "id": "4",
+      "value": "2"
+    }
+  ],
+  "skill_trees": [
+    {
+      "id": "skill1",
+      "value": "Arithmetic"
+    }
+  ],
+  "keyword_ids": [1, 2, 3],
+  "remedial_instruction": "Practice multiplication tables",
+  "misconception_explanation": "Common mistake: forgetting to carry over",
+  "content_origin_type": "create"
+}

@@ -1,0 +1,15 @@
+{
+  "project_id": 1,
+  "language_code": "en",
+  "question_type": "Tracing",
+  "subject_no": "2",
+  "class": "3",
+  "stem": "Trace the path from point A to point B through the circuit.",
+  "additional_data": [
+    {
+      "trace_path": ["A", "B", "C", "D"],
+      "path_color": "#FF0000",
+      "stroke_width": 2
+    }
+  ]
+}

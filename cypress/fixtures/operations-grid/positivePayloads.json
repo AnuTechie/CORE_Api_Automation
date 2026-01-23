@@ -1,0 +1,96 @@
+{
+  "withStemVoiceover": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 100 - 25",
+    "stem_voiceover": {
+      "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
+    "first_number": "100",
+    "second_number": "25",
+    "operation_type": "subtract",
+    "correct_answer": 75
+  },
+  "withAttributes": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Find the result: 1000 / 5",
+    "first_number": "1000",
+    "second_number": "5",
+    "operation_type": "divide",
+    "correct_answer": 200,
+    "attributes": [
+      {
+        "id": "difficulty",
+        "value": "Medium"
+      },
+      {
+        "id": "level",
+        "value": "Advanced"
+      }
+    ]
+  },
+  "withSkillTrees": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Solve: 150 + 250",
+    "first_number": "150",
+    "second_number": "250",
+    "operation_type": "add",
+    "correct_answer": 400,
+    "skill_trees": [
+      {
+        "id": "addition",
+        "value": "Basic Addition"
+      }
+    ]
+  },
+  "withMaxScore": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 999 * 2",
+    "first_number": "999",
+    "second_number": "2",
+    "operation_type": "multiply",
+    "correct_answer": 1998,
+    "max_score": 10
+  },
+  "hindiLanguage": {
+    "project_id": 1,
+    "language_code": "hi",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "हल करें: 50 + 50",
+    "first_number": "50",
+    "second_number": "50",
+    "operation_type": "add",
+    "correct_answer": 100
+  },
+  "withExplanation": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Perform the operation: 300 - 100",
+    "first_number": "300",
+    "second_number": "100",
+    "operation_type": "subtract",
+    "correct_answer": 200,
+    "explanation": "Subtract 100 from 300 to get 200",
+    "testing_objective": "Test subtraction skills"
+  }
+}

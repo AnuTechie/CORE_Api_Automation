@@ -542,3 +542,158 @@ Cypress.Commands.add('createClassificationAndStore', (payload, overrides = {}) =
         return response;
     });
 });
+
+// ***********************************************
+// INTERACTIVE QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Interactive Question API Command
+ * @param {Object} payload - Interactive question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createInteractive', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/interactive',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Interactive with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'interactive/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createInteractiveFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createInteractive(payload, overrides);
+    });
+});
+
+/**
+ * Create Interactive and store content_id
+ * Creates Interactive question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Interactive question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createInteractiveAndStore', (payload, overrides = {}) => {
+    return cy.createInteractive(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_INTERACTIVE_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_INTERACTIVE_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+/**
+ * Create Operations Grid question
+ * Creates Operations Grid question via API
+ * @param {Object} payload - Operations Grid question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createOperationsGrid', (payload, overrides = {}) => {
+    const mergedPayload = { ...payload, ...overrides };
+
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/operations-grid',
+        body: mergedPayload,
+        headers: {
+            ...getAuthHeaders(),
+            'Content-Type': 'application/json',
+        },
+        failOnStatusCode: false, // Allow non-2xx responses for negative tests
+    });
+});
+
+/**
+ * Create Operations Grid from fixture
+ * Creates Operations Grid question from a fixture file
+ * @param {string} fixturePath - Path to fixture file (e.g., 'operations-grid/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createOperationsGridFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createOperationsGrid(payload, overrides);
+    });
+});
+
+/**
+ * Create Operations Grid and store content_id
+ * Creates Operations Grid question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Operations Grid question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createOperationsGridAndStore', (payload, overrides = {}) => {
+    return cy.createOperationsGrid(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_OPERATIONS_GRID_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_OPERATIONS_GRID_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+/**
+ * Create Tracing question
+ * Creates Tracing question via API
+ * @param {Object} payload - Tracing question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createTracing', (payload, overrides = {}) => {
+    const mergedPayload = { ...payload, ...overrides };
+
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/tracing',
+        body: mergedPayload,
+        headers: {
+            ...getAuthHeaders(),
+            'Content-Type': 'application/json',
+        },
+        failOnStatusCode: false, // Allow non-2xx responses for negative tests
+    });
+});
+
+/**
+ * Create Tracing from fixture
+ * Creates Tracing question from a fixture file
+ * @param {string} fixturePath - Path to fixture file (e.g., 'tracing/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createTracingFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createTracing(payload, overrides);
+    });
+});
+
+/**
+ * Create Tracing and store content_id
+ * Creates Tracing question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Tracing question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createTracingAndStore', (payload, overrides = {}) => {
+    return cy.createTracing(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_TRACING_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_TRACING_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});

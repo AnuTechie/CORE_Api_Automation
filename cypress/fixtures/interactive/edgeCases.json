@@ -1,0 +1,107 @@
+{
+  "specialChars": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Special chars: !@#$%^&*()_+ &nbsp;<interactive-content name=\"SpecialCharsWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "special_chars.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Special characters handling test",
+    "testing_objective": "Verify special character support in interactive content"
+  },
+  "sqlInjection": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "SQL Injection test &nbsp;<interactive-content name=\"SQLTestWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "sql_injection.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "SQL injection prevention test",
+    "testing_objective": "Verify SQL injection protection"
+  },
+  "xssAttempt": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "XSS prevention test &nbsp;<interactive-content name=\"XSSTestWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "xss_attempt.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "XSS attack prevention test",
+    "testing_objective": "Verify XSS protection mechanisms"
+  },
+  "projectIdAsString": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Project ID as string test &nbsp;<interactive-content name=\"ProjectIDWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "project_id_string.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test project ID validation",
+    "testing_objective": "Verify project ID type validation"
+  },
+  "negativeProjectId": {
+    "project_id": -1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Negative project ID test &nbsp;<interactive-content name=\"NegativeProjectWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "negative_project_id.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test negative project ID handling",
+    "testing_objective": "Verify negative ID validation"
+  },
+  "classAsInteger": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Class as integer test &nbsp;<interactive-content name=\"ClassIntegerWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "class_integer.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test class format validation",
+    "testing_objective": "Verify class type validation"
+  },
+  "extraFields": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Extra fields test &nbsp;<interactive-content name=\"ExtraFieldsWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"language\":\"en\",\"noOfDots\":\"01\",\"showAnsFlag\":true}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "extra_fields.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test extra field handling",
+    "testing_objective": "Verify extra fields are properly ignored"
+  }
+}

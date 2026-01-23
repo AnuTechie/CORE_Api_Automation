@@ -1,0 +1,139 @@
+{
+  "specialCharsInStem": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 100 + 50 !@#$%^&*()",
+    "first_number": "100",
+    "second_number": "50",
+    "operation_type": "add",
+    "correct_answer": 150
+  },
+  "sqlInjection": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Find the answer: 200 + 100; DROP TABLE questions;",
+    "first_number": "200",
+    "second_number": "100",
+    "operation_type": "add",
+    "correct_answer": 300
+  },
+  "xssAttempt": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: <script>alert('xss')</script> 75 * 2",
+    "first_number": "75",
+    "second_number": "2",
+    "operation_type": "multiply",
+    "correct_answer": 150
+  },
+  "projectIdAsString": {
+    "project_id": "1",
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Solve: 500 + 500",
+    "first_number": "500",
+    "second_number": "500",
+    "operation_type": "add",
+    "correct_answer": 1000
+  },
+  "negativeProjectId": {
+    "project_id": -1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 50 - 25",
+    "first_number": "50",
+    "second_number": "25",
+    "operation_type": "subtract",
+    "correct_answer": 25
+  },
+  "classAsString": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Find: 888 + 112",
+    "first_number": "888",
+    "second_number": "112",
+    "operation_type": "add",
+    "correct_answer": 1000
+  },
+  "negativeNumbers": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: -50 + 30",
+    "first_number": "-50",
+    "second_number": "30",
+    "operation_type": "add",
+    "correct_answer": -20
+  },
+  "largeNumbers": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Perform: 99999 + 99999",
+    "first_number": "99999",
+    "second_number": "99999",
+    "operation_type": "add",
+    "correct_answer": 199998
+  },
+  "invalidOperationType": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 100 modulo 7",
+    "first_number": "100",
+    "second_number": "7",
+    "operation_type": "modulo",
+    "correct_answer": 2
+  },
+  "correctAnswerAsString": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Find: 150 + 150",
+    "first_number": "150",
+    "second_number": "150",
+    "operation_type": "add",
+    "correct_answer": "300"
+  },
+  "extraFields": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Operations-Grid",
+    "subject_no": "2",
+    "class": 3,
+    "stem": "Calculate: 1000 / 10",
+    "first_number": "1000",
+    "second_number": "10",
+    "operation_type": "divide",
+    "correct_answer": 100,
+    "extra_field_1": "should be ignored",
+    "extra_field_2": "also ignored",
+    "custom_property": {
+      "nested": "value"
+    }
+  }
+}

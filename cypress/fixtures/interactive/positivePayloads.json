@@ -1,0 +1,152 @@
+{
+  "withContainerIdsAndAttributes": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Interactive content with container IDs and attributes &nbsp;<interactive-content name=\"ContainerWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "vo1.wav"
+    },
+    "template": "standard",
+    "max_score": 2,
+    "explanation": "Test with container IDs and attributes",
+    "testing_objective": "Test objective",
+    "attributes": [
+      {
+        "id": "attrA",
+        "value": "A"
+      },
+      {
+        "id": "attrB",
+        "value": "B"
+      }
+    ],
+    "skill_trees": [
+      {
+        "id": "s1",
+        "value": "v1"
+      }
+    ]
+  },
+  "withStemVoiceover": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Interactive stem with voiceover element &nbsp;<interactive-content name=\"VoiceoverWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "voice_special.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "explanation",
+    "testing_objective": "objective",
+    "attributes": [
+      {
+        "id": "a1",
+        "value": "v1"
+      }
+    ],
+    "skill_trees": [
+      {
+        "id": "k1",
+        "value": "lvl1"
+      }
+    ]
+  },
+  "withSkillTrees": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Interactive content with skill trees &nbsp;<interactive-content name=\"SkillTreeWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "st.wav"
+    },
+    "template": "standard",
+    "max_score": 3,
+    "explanation": "Test with skill trees",
+    "testing_objective": "Skill tree evaluation",
+    "attributes": [
+      {
+        "id": "aa",
+        "value": "vv"
+      }
+    ],
+    "skill_trees": [
+      {
+        "id": "skillA",
+        "value": "apply"
+      },
+      {
+        "id": "skillB",
+        "value": "understand"
+      }
+    ]
+  },
+  "customAttributes": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Interactive content with custom attributes &nbsp;<interactive-content name=\"CustomAttrWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "cust.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test custom attributes",
+    "testing_objective": "Custom attribute test",
+    "attributes": [
+      {
+        "id": "custom1",
+        "value": "x"
+      }
+    ],
+    "skill_trees": []
+  },
+  "hindiLanguage": {
+    "project_id": 1,
+    "language_code": "hi",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "हिंदी सामग्री &nbsp;<interactive-content name=\"HindiWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "hindi_vo.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "विवरण",
+    "testing_objective": "उद्देश्य",
+    "attributes": [
+      {
+        "id": "lang",
+        "value": "hi"
+      }
+    ],
+    "skill_trees": []
+  },
+  "contentOriginCopy": {
+    "project_id": 1,
+    "language_code": "en",
+    "subject_no": "2",
+    "class": "6",
+    "question_type": "Interactive",
+    "stem": "Copied content stem &nbsp;<interactive-content name=\"CopyOriginWidget\" path=\"\" mime-type=\"application/dart\" input_params='{\"object\":\"\",\"number_of_objects\":0,\"disappearing_objects\":0,\"animation\":\"\",\"replay_button\":0,\"time\":0}'></interactive-content>",
+    "stem_voiceover": {
+      "en-IN": "copy.wav"
+    },
+    "template": "standard",
+    "max_score": 1,
+    "explanation": "Test for copied content origin",
+    "testing_objective": "Content origin verification",
+    "attributes": [],
+    "skill_trees": []
+  }
+}

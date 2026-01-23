@@ -1,0 +1,195 @@
+{
+  "specialCharsInStem": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace path: !@#$%^&*() from A to B",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "sqlInjection": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace: A'; DROP TABLE questions; -- B",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "xssAttempt": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace: <script>alert('xss')</script> path",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "projectIdAsString": {
+    "project_id": "1",
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace the path",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "negativeProjectId": {
+    "project_id": -1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace the path",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "emptyTracePathArray": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with empty path",
+    "additional_data": [
+      {
+        "trace_path": [],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "emptyAdditionalData": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with no data",
+    "additional_data": []
+  },
+  "invalidPathColor": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with invalid color",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "invalid_color",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "negativeStrokeWidth": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with negative stroke",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": -5
+      }
+    ]
+  },
+  "zeroStrokeWidth": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with zero stroke",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 0
+      }
+    ]
+  },
+  "veryLongStem": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits. A very long stem that contains repetitive text to test system limits.",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "missingTracePathField": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with missing path field",
+    "additional_data": [
+      {
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ]
+  },
+  "extraFields": {
+    "project_id": 1,
+    "language_code": "en",
+    "question_type": "Tracing",
+    "subject_no": "2",
+    "class": "3",
+    "stem": "Trace with extra fields",
+    "additional_data": [
+      {
+        "trace_path": ["A", "B"],
+        "path_color": "#FF0000",
+        "stroke_width": 2
+      }
+    ],
+    "extra_field_1": "should be ignored",
+    "extra_field_2": "also ignored",
+    "custom_property": {
+      "nested": "value"
+    }
+  }
+}
