@@ -1,13 +1,35 @@
 {
     "project_id": 1,
     "language_code": "en",
-    "question_type": "BlockCounting",
+    "context": "GJ",
+    "question_type": "Block-counting",
     "subject_no": "2",
-    "class": 6,
-    "stem": "<p>How many blocks are in the figure?</p>",
-    "image_url": "https://example.com/images/block_counting_sample.png",
-    "answer_type": "numeric",
-    "correct_answer": 12,
-    "min_value": 0,
-    "max_value": 100
+    "class": "6",
+    "stem": "<p>How many blocks are in the figure below?</p>",
+    "max_score": 1,
+    "explanation": "Count all visible blocks including those partially hidden",
+    "testing_objective": "A: Counts only visible faces, B: Misses hidden blocks, C: Correct count, D: Counts same block twice",
+    "option_data": [
+        {
+            "option_image": "https://example.com/images/block_option_1.png",
+            "option_value": "10"
+        },
+        {
+            "option_image": "https://example.com/images/block_option_2.png",
+            "option_value": "12"
+        },
+        {
+            "option_image": "https://example.com/images/block_option_3.png",
+            "option_value": "15"
+        },
+        {
+            "option_image": "https://example.com/images/block_option_4.png",
+            "option_value": "18"
+        }
+    ],
+    "correct_answer": "12",
+    "misconception_explanation": "Student may count only visible faces or miss hidden blocks",
+    "keyword_ids": [
+        9
+    ]
 }

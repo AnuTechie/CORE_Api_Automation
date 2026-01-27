@@ -1,12 +1,18 @@
 {
     "project_id": 1,
     "language_code": "en",
-    "question_type": "Classification",
-    "subject_no": "2",
     "class": "6",
     "context": "IN",
-    "template": "all_together",
-    "stem": "Classify the following into disease and symptoms",
+    "instruction": "instruction",
+    "stem": "Classify the following into disease and symptoms WITH UPDATION",
+    "stem_voiceover": {
+        "en-GB": "fileexampleWAV1MGwav_1411200_V2.wav",
+        "hi-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
+    "instruction_voiceover": {
+        "en-GB": "fileexampleWAV1MGwav_1411200_V2.wav",
+        "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
     "max_score": 1,
     "explanation": "explanation",
     "testing_objective": "A: Read the scale incorretlyB: Read the scale incorrectly.C: CAD: Read the scale incorrectly",
@@ -43,25 +49,11 @@
         {
             "id": 4,
             "name": "Headache"
-        },
-        {
-            "id": 5,
-            "name": "Malaria",
-            "item_voiceover": {
-                "en-IN": "abc.mp3",
-                "en-ZA": "abd.mp3"
-            }
-        },
-        {
-            "id": 6,
-            "name": "Cholera"
         }
     ],
     "correct_answer": {
         "1": [
-            2,
-            5,
-            6
+            2
         ],
         "2": [
             1,
@@ -69,8 +61,15 @@
             4
         ]
     },
-    "option_type": "Text",
-    "keyword_ids": [
-        9
-    ]
+    "attributes": [
+        {
+            "id": "1",
+            "value": "Medium"
+        },
+        {
+            "id": "4",
+            "value": "2"
+        }
+    ],
+    "template": "all_together"
 }

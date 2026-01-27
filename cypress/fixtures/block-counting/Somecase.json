@@ -7,15 +7,7 @@
     "stem": "<p>Count the total number of blocks in this 3D structure.</p>",
     "instruction": "<p>Look carefully at all visible and hidden blocks.</p>",
     "correct_answer": "24",
-    "option_data": [
-        {
-            "option_image": "https://example.com/images/block_option_1.png",
-            "option_value": "10"
-        }
-    ],
     "max_score": 1,
-    "keyword_ids": [
-        1
-    ],
+    "option_data": [],
     "explanation": "<p>There are 24 blocks in total including the hidden ones.</p>"
 }

@@ -1,0 +1,644 @@
+{
+    "singleOption": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Only one item to sequence:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            }
+        ],
+        "correct_answer": [
+            [
+                1
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "maxOptions": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Arrange all 10 items in correct order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "First"
+            },
+            {
+                "index": 2,
+                "value": "Second"
+            },
+            {
+                "index": 3,
+                "value": "Third"
+            },
+            {
+                "index": 4,
+                "value": "Fourth"
+            },
+            {
+                "index": 5,
+                "value": "Fifth"
+            },
+            {
+                "index": 6,
+                "value": "Sixth"
+            },
+            {
+                "index": 7,
+                "value": "Seventh"
+            },
+            {
+                "index": 8,
+                "value": "Eighth"
+            },
+            {
+                "index": 9,
+                "value": "Ninth"
+            },
+            {
+                "index": 10,
+                "value": "Tenth"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        ],
+        "shuffle_options": true
+    },
+    "multipleCorrectSequences": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Events that happened in the same year can be in any order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "Event A"
+            },
+            {
+                "index": 2,
+                "value": "Event B"
+            },
+            {
+                "index": 3,
+                "value": "Event C"
+            },
+            {
+                "index": 4,
+                "value": "Event D"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3,
+                4
+            ],
+            [
+                1,
+                3,
+                2,
+                4
+            ],
+            [
+                2,
+                1,
+                3,
+                4
+            ],
+            [
+                2,
+                3,
+                1,
+                4
+            ],
+            [
+                3,
+                1,
+                2,
+                4
+            ],
+            [
+                3,
+                2,
+                1,
+                4
+            ]
+        ],
+        "shuffle_options": true
+    },
+    "veryLongStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>This is a very long stem with lots of text to test the maximum character limit for the stem field. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            },
+            {
+                "index": 3,
+                "value": "C"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "specialCharactersInStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Special chars: !@#$%^&*()_+-=[]{}|;:',.<>?/~`</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "unicodeCharacters": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Unicode: 😀🎉🌟✨💯🔥⭐️🎯</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "😀"
+            },
+            {
+                "index": 2,
+                "value": "🎉"
+            },
+            {
+                "index": 3,
+                "value": "🌟"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "sqlInjectionAttempt": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>'; DROP TABLE questions; --</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "xssAttempt": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<script>alert('XSS')</script><p>Arrange in order:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "<script>alert('option1')</script>"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "duplicateIndices": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Options with duplicate index values:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 1,
+                "value": "B"
+            },
+            {
+                "index": 2,
+                "value": "C"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "nonSequentialIndices": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Options with non-sequential indices:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 5,
+                "value": "B"
+            },
+            {
+                "index": 10,
+                "value": "C"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                5,
+                10
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "emptyStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "htmlTagsInStem": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p><b>Bold</b> <i>Italic</i> <u>Underline</u> <sup>Superscript</sup> <sub>Subscript</sub></p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "<b>A</b>"
+            },
+            {
+                "index": 2,
+                "value": "<i>B</i>"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "classAsString": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "six",
+        "stem": "<p>Class value as string instead of number:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "projectIdAsString": {
+        "project_id": "1",
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Project ID as string instead of number:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "allOptionalFieldsIncluded": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Payload with all optional fields populated:</p>",
+        "stem_voiceover": {
+            "en-GB": "fileexampleWAV1MGwav_1411200_V2.wav",
+            "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav",
+            "hi-IN": "fileexampleWAV1MGwav_1411200_V3.wav"
+        },
+        "max_score": 5,
+        "explanation": "<p>This is a detailed explanation of the correct sequence.</p>",
+        "testing_objective": "Test objective: Understanding sequential order",
+        "options": [
+            {
+                "index": 1,
+                "value": "First"
+            },
+            {
+                "index": 2,
+                "value": "Second"
+            },
+            {
+                "index": 3,
+                "value": "Third"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3
+            ],
+            [
+                2,
+                3,
+                1
+            ]
+        ],
+        "shuffle_options": true,
+        "misconception_explanation": "Common misconception: Students may confuse chronological order",
+        "keyword_ids": [
+            1,
+            2,
+            3,
+            8,
+            15
+        ]
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "language_code": "hi",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>सही क्रम में व्यवस्थित करें:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "पहला"
+            },
+            {
+                "index": 2,
+                "value": "दूसरा"
+            },
+            {
+                "index": 3,
+                "value": "तीसरा"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "shuffle_options": true
+    },
+    "marathiLanguage": {
+        "project_id": 1,
+        "language_code": "mr",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>योग्य क्रमाने लावा:</p>",
+        "max_score": 1,
+        "options": [
+            {
+                "index": 1,
+                "value": "पहिला"
+            },
+            {
+                "index": 2,
+                "value": "दुसरा"
+            },
+            {
+                "index": 3,
+                "value": "तिसरा"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2,
+                3
+            ]
+        ],
+        "shuffle_options": true
+    },
+    "zeroMaxScore": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Max score is zero:</p>",
+        "max_score": 0,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    },
+    "veryHighMaxScore": {
+        "project_id": 1,
+        "language_code": "en",
+        "context": "IN",
+        "question_type": "Sequencing",
+        "subject_no": "2",
+        "class": "6",
+        "stem": "<p>Very high max score:</p>",
+        "max_score": 999999,
+        "options": [
+            {
+                "index": 1,
+                "value": "A"
+            },
+            {
+                "index": 2,
+                "value": "B"
+            }
+        ],
+        "correct_answer": [
+            [
+                1,
+                2
+            ]
+        ],
+        "shuffle_options": false
+    }
+}

@@ -1,37 +1,54 @@
 {
     "project_id": 1,
     "language_code": "en",
+    "context": "IN",
     "question_type": "Sequencing",
     "subject_no": "2",
-    "class": 6,
-    "stem": "<p>Arrange the following steps in the correct order:</p>",
-    "items": [
+    "class": "6",
+    "stem": "<p>Renu poured 1250 ml of water into a jar. Only two measurement numbers on the jar can be seen. </p><p>Which of the following shows Renu's jar with 1250 ml of water?</p>",
+    "stem_voiceover": {
+        "en-GB": "fileexampleWAV1MGwav_1411200_V2.wav",
+        "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
+    "max_score": 1,
+    "explanation": "explanation",
+    "testing_objective": "A: Read the scale incorretlyB: Read the scale incorrectly.C: CAD: Read the scale incorrectly",
+    "options": [
         {
-            "item_index": 1,
-            "item_value": "<p>Mix the ingredients</p>",
-            "item_id": "item_1"
+            "index": 1,
+            "value": "A"
         },
         {
-            "item_index": 2,
-            "item_value": "<p>Preheat the oven</p>",
-            "item_id": "item_2"
+            "index": 2,
+            "value": "T"
         },
         {
-            "item_index": 3,
-            "item_value": "<p>Bake for 30 minutes</p>",
-            "item_id": "item_3"
-        },
-        {
-            "item_index": 4,
-            "item_value": "<p>Let it cool</p>",
-            "item_id": "item_4"
+            "index": 3,
+            "value": "E"
         }
     ],
-    "correct_sequence": [
-        2,
-        1,
-        3,
-        4
+    "correct_answer": [
+        [
+            1,
+            2,
+            3
+        ],
+        [
+            2,
+            3,
+            1
+        ],
+        [
+            3,
+            1,
+            2
+        ]
     ],
-    "shuffle": true
+    "shuffle_options": false,
+    "misconception_explanation": "ME",
+    "keyword_ids": [
+        8,
+        9,
+        10
+    ]
 }

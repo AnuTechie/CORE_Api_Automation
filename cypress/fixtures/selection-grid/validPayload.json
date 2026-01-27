@@ -1,0 +1,49 @@
+{
+    "project_id": 3,
+    "language_code": "en",
+    "context": "GJ",
+    "question_type": "Selection-grid",
+    "subject_no": "2",
+    "class": "6",
+    "stem": "<p>Renu poured 1250 ml of water into a jar. Only two measurement numbers on the jar can be seen. </p><p>Which of the following shows Renu's jar with 1250 ml of water?</p>",
+    "max_score": 1,
+    "explanation": "explanation",
+    "selection_sets": {
+        "column_a_options": [
+            {
+                "option_value": "text1",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-GB": "fileexampleWAV1MGwav_1411200_V1.wav",
+                    "en-IN": "fileexampleWAV1MGwav_1411200_V2.wav"
+                }
+            }
+        ],
+        "column_b_options": [
+            {
+                "option_value": "text1",
+                "option_index": 1
+            }
+        ]
+    },
+    "correct_answer": [
+        {
+            "column_a_index": 1,
+            "column_b_index": 1
+        }
+    ],
+    "shuffle": false,
+    "max_options": "10",
+    "time_limit": "10",
+    "practice_question": false,
+    "attributes": [
+        {
+            "id": "1",
+            "value": "Medium"
+        },
+        {
+            "id": "4",
+            "value": "2"
+        }
+    ]
+}

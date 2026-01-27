@@ -1,0 +1,493 @@
+{
+    "singlePair": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Match the animal with its habitat.</p>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Fish",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "fish.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Water",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "water.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            }
+        ],
+        "shuffle": false,
+        "max_options": "5",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "multiplePairs": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Match the countries with their capitals.</p>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "France",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "france.wav"
+                    }
+                },
+                {
+                    "option_value": "Germany",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "germany.wav"
+                    }
+                },
+                {
+                    "option_value": "Italy",
+                    "option_index": 3,
+                    "option_voiceover": {
+                        "en-IN": "italy.wav"
+                    }
+                },
+                {
+                    "option_value": "Spain",
+                    "option_index": 4,
+                    "option_voiceover": {
+                        "en-IN": "spain.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Paris",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "paris.wav"
+                    }
+                },
+                {
+                    "option_value": "Berlin",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "berlin.wav"
+                    }
+                },
+                {
+                    "option_value": "Rome",
+                    "option_index": 3,
+                    "option_voiceover": {
+                        "en-IN": "rome.wav"
+                    }
+                },
+                {
+                    "option_value": "Madrid",
+                    "option_index": 4,
+                    "option_voiceover": {
+                        "en-IN": "madrid.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            },
+            {
+                "column_a_index": 3,
+                "column_b_index": 3
+            },
+            {
+                "column_a_index": 4,
+                "column_b_index": 4
+            }
+        ],
+        "shuffle": true,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "hindiLanguage": {
+        "project_id": 3,
+        "language_code": "hi",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>सही जोड़े का चयन करें।</p>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "सेब",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "hi-IN": "apple_hindi.wav"
+                    }
+                },
+                {
+                    "option_value": "केला",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "hi-IN": "banana_hindi.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "लाल",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "hi-IN": "red_hindi.wav"
+                    }
+                },
+                {
+                    "option_value": "पीला",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "hi-IN": "yellow_hindi.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "htmlContent": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p><strong>Mathematics:</strong> Match the operations with their symbols.</p><ul><li>Addition</li><li>Subtraction</li></ul>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "<b>Addition</b>",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "addition.wav"
+                    }
+                },
+                {
+                    "option_value": "<i>Subtraction</i>",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "subtraction.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "<strong>+</strong>",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "plus.wav"
+                    }
+                },
+                {
+                    "option_value": "<strong>-</strong>",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "minus.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "withVoiceover": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Match the sounds with the animals.</p>",
+        "instruction_voiceover": {
+            "en-IN": "instruction_voiceover.wav",
+            "hi-IN": "instruction_voiceover_hi.wav"
+        },
+        "stem_voiceover": {
+            "en-IN": "stem_voiceover.wav"
+        },
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Dog",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "dog_audio.wav"
+                    }
+                },
+                {
+                    "option_value": "Cat",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "cat_audio.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Bark",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "bark_audio.wav"
+                    }
+                },
+                {
+                    "option_value": "Meow",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "meow_audio.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "unequalColumns": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Match the correct pairs (extra options in column B).</p>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Square",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "square.wav"
+                    }
+                },
+                {
+                    "option_value": "Circle",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "circle.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "4 sides",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "four_sides.wav"
+                    }
+                },
+                {
+                    "option_value": "No sides",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "no_sides.wav"
+                    }
+                },
+                {
+                    "option_value": "3 sides",
+                    "option_index": 3,
+                    "option_voiceover": {
+                        "en-IN": "three_sides.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "10"
+    },
+    "practiceQuestion": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Practice: Match the numbers with words.</p>",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "1",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "one_num.wav"
+                    }
+                },
+                {
+                    "option_value": "2",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "two_num.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "One",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "one_word.wav"
+                    }
+                },
+                {
+                    "option_value": "Two",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "two_word.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "5",
+        "practice_question": true,
+        "mandatory_questions": "2",
+        "time_limit": "10"
+    },
+    "withMaxScore": {
+        "project_id": 3,
+        "language_code": "en",
+        "context": "GJ",
+        "question_type": "Selection-grid",
+        "subject_no": 2,
+        "class": "6",
+        "stem": "<p>Match items for maximum score.</p>",
+        "max_score": 10,
+        "explanation": "Detailed explanation for this question.",
+        "selection_sets": {
+            "column_a_options": [
+                {
+                    "option_value": "Item A",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "item_a.wav"
+                    }
+                },
+                {
+                    "option_value": "Item B",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "item_b.wav"
+                    }
+                }
+            ],
+            "column_b_options": [
+                {
+                    "option_value": "Match A",
+                    "option_index": 1,
+                    "option_voiceover": {
+                        "en-IN": "match_a.wav"
+                    }
+                },
+                {
+                    "option_value": "Match B",
+                    "option_index": 2,
+                    "option_voiceover": {
+                        "en-IN": "match_b.wav"
+                    }
+                }
+            ]
+        },
+        "correct_answer": [
+            {
+                "column_a_index": 1,
+                "column_b_index": 1
+            },
+            {
+                "column_a_index": 2,
+                "column_b_index": 2
+            }
+        ],
+        "shuffle": false,
+        "max_options": "10",
+        "practice_question": false,
+        "time_limit": "15"
+    }
+}

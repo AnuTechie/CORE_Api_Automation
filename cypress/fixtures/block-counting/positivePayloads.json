@@ -2,68 +2,82 @@
     "withVideo": {
         "project_id": 1,
         "language_code": "en",
-        "question_type": "BlockCounting",
+        "question_type": "Block-counting",
         "subject_no": "2",
-        "class": 6,
+        "class": "6",
         "stem": "<p>Watch the video and count the blocks.</p>",
         "instruction": "<video src='https://example.com/videos/blocks.mp4'></video>",
-        "answer_type": "numeric",
-        "correct_answer": 15,
-        "min_value": 0,
-        "max_value": 50
+        "explanation": "Count the visible blocks shown in the video.",
+        "correct_answer": "15",
+        "option_data": [
+            {
+                "option_image": "https://example.com/images/block_option_1.png",
+                "option_value": "10"
+            }
+        ]
     },
     "hindiLanguage": {
         "project_id": 1,
-        "language_code": "hi",
-        "question_type": "BlockCounting",
+        "language_code": "en",
+        "question_type": "Block-counting",
         "subject_no": "2",
-        "class": 6,
+        "class": "6",
         "stem": "<p>चित्र में कितने ब्लॉक हैं?</p>",
-        "image_url": "https://example.com/images/blocks_hindi.png",
-        "answer_type": "numeric",
-        "correct_answer": 18,
-        "min_value": 0,
-        "max_value": 100
+        "explanation": "Count the visible blocks shown in the image.",
+        "correct_answer": "15",
+        "option_data": [
+            {
+                "option_image": "https://example.com/images/block_option_1.png",
+                "option_value": "10"
+            }
+        ]
     },
     "largeNumber": {
         "project_id": 1,
         "language_code": "en",
-        "question_type": "BlockCounting",
+        "question_type": "Block-counting",
         "subject_no": "2",
-        "class": 6,
+        "class": "6",
         "stem": "<p>Count all blocks in this complex structure.</p>",
-        "image_url": "https://example.com/images/complex_blocks.png",
-        "answer_type": "numeric",
-        "correct_answer": 999,
-        "min_value": 0,
-        "max_value": 1000
+        "correct_answer": "999",
+        "option_data": [
+            {
+                "option_image": "https://example.com/images/block_option_1.png",
+                "option_value": "10"
+            }
+        ],
+        "explanation": "Carefully count each visible and hidden block in the structure to arrive at the total."
     },
     "withExplanation": {
         "project_id": 1,
         "language_code": "en",
-        "question_type": "BlockCounting",
+        "question_type": "Block-counting",
         "subject_no": "2",
-        "class": 6,
+        "class": "6",
         "stem": "<p>How many cubes are there?</p>",
-        "image_url": "https://example.com/images/cubes.png",
-        "answer_type": "numeric",
-        "correct_answer": 27,
-        "min_value": 0,
-        "max_value": 100,
+        "correct_answer": "27",
+        "option_data": [
+            {
+                "option_image": "https://example.com/images/block_option_1.png",
+                "option_value": "10"
+            }
+        ],
         "explanation": "<p>Count: 3 layers × 3 rows × 3 columns = 27 cubes</p>"
     },
     "highDifficulty": {
         "project_id": 1,
         "language_code": "en",
-        "question_type": "BlockCounting",
+        "question_type": "Block-counting",
         "subject_no": "2",
-        "class": 7,
+        "class": "7",
         "stem": "<p>Determine the total blocks including hidden ones.</p>",
-        "image_url": "https://example.com/images/advanced_blocks.png",
-        "answer_type": "numeric",
-        "correct_answer": 45,
-        "min_value": 0,
-        "max_value": 100,
-        "difficulty_level": "hard"
+        "correct_answer": "45",
+        "explanation": "This problem requires accounting for both visible and concealed blocks in the 3D structure.",
+        "option_data": [
+            {
+                "option_image": "https://example.com/images/block_option_1.png",
+                "option_value": "10"
+            }
+        ]
     }
 }
