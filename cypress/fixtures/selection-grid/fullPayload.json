@@ -1,0 +1,99 @@
+{
+    "project_id": 3,
+    "language_code": "en",
+    "context": "GJ",
+    "question_type": "Selection-grid",
+    "subject_no": 2,
+    "class": "6",
+    "instruction": "Select the correct pairs from the grid below.",
+    "stem": "<p>Match each fruit with its correct color from the selection grid.</p>",
+    "max_score": 5,
+    "explanation": "Each fruit has a specific color. Apple is red, Banana is yellow, Grapes are purple.",
+    "testing_objective": "Ability to match items using a selection grid interface",
+    "mandatory_questions": "2",
+    "time_limit": "10",
+    "instruction_voiceover": {
+        "en-IN": "instruction_audio.wav",
+        "hi-IN": "instruction_audio_hindi.wav"
+    },
+    "stem_voiceover": {
+        "en-IN": "stem_audio.wav"
+    },
+    "explanation_voiceover": {
+        "en-IN": "explanation_audio.wav"
+    },
+    "selection_sets": {
+        "column_a_options": [
+            {
+                "option_value": "Apple",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "apple_audio.wav"
+                }
+            },
+            {
+                "option_value": "Banana",
+                "option_index": 2,
+                "option_voiceover": {
+                    "en-IN": "banana_audio.wav"
+                }
+            },
+            {
+                "option_value": "Grapes",
+                "option_index": 3,
+                "option_voiceover": {
+                    "en-IN": "grapes_audio.wav"
+                }
+            }
+        ],
+        "column_b_options": [
+            {
+                "option_value": "Red",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "red_audio.wav"
+                }
+            },
+            {
+                "option_value": "Yellow",
+                "option_index": 2,
+                "option_voiceover": {
+                    "en-IN": "yellow_audio.wav"
+                }
+            },
+            {
+                "option_value": "Purple",
+                "option_index": 3,
+                "option_voiceover": {
+                    "en-IN": "purple_audio.wav"
+                }
+            }
+        ]
+    },
+    "correct_answer": [
+        {
+            "column_a_index": 1,
+            "column_b_index": 1
+        },
+        {
+            "column_a_index": 2,
+            "column_b_index": 2
+        },
+        {
+            "column_a_index": 3,
+            "column_b_index": 3
+        }
+    ],
+    "shuffle": true,
+    "max_options": "10",
+    "practice_question": false,
+    "misconception_explanation": "Students may confuse fruit colors with other attributes",
+    "keyword_ids": [
+        9,
+        10,
+        15
+    ],
+    "attributes": {
+        "Difficulty Level": "Medium"
+    }
+}

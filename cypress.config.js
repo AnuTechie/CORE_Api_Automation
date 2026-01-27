@@ -12,6 +12,14 @@ module.exports = defineConfig({
       "cypress/e2e/BlockCounting/post_blockcounting.cy.js",
       "cypress/e2e/Sequencing/post_sequencing.cy.js",
       "cypress/e2e/Classification/post_classification.cy.js",
+      "cypress/e2e/SelectionGrid/post_selectiongrid.cy.js",
+      "cypress/e2e/Blank/put_blank.cy.js",
+      "cypress/e2e/MCQ/put_mcq.cy.js",
+      "cypress/e2e/Matching/put_matching.cy.js",
+      "cypress/e2e/BlockCounting/put_blockcounting.cy.js",
+      "cypress/e2e/Sequencing/put_sequencing.cy.js",
+      "cypress/e2e/Classification/put_classification.cy.js",
+      "cypress/e2e/SelectionGrid/put_selectiongrid.cy.js",
     ],
     setupNodeEvents(on, config) {
       // PostgreSQL Database Task

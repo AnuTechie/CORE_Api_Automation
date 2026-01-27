@@ -1,0 +1,43 @@
+{
+    "project_id": 1,
+    "language_code": "en",
+    "context": "IN",
+    "class": "6",
+    "stem": "<p>Renu poured 1250 ml of water into a jar. Only two measurement numbers on the jar can be seen. </p><p>Which of the following shows Renu's jar with 1250 ml of water?</p>",
+    "stem_voiceover": {
+        "en-GB": "fileexampleWAV1MGwav_1411200_V2.wav",
+        "en-IN": "fileexampleWAV1MGwav_1411200_V1.wav"
+    },
+    "explanation": "explanation",
+    "testing_objective": "A: Read the scale incorretlyB: Read the scale incorrectly.C: CAD: Read the scale incorrectly",
+    "misconception_explanation": "uyw",
+    "keyword_ids": [
+        8
+    ],
+    "options": [
+        {
+            "index": 1,
+            "value": "A"
+        },
+        {
+            "index": 2,
+            "value": "T"
+        },
+        {
+            "index": 3,
+            "value": "E"
+        }
+    ],
+    "correct_answer": [
+        [
+            1,
+            2,
+            3
+        ],
+        [
+            2,
+            3,
+            1
+        ]
+    ]
+}

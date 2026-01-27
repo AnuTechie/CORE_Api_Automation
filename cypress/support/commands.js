@@ -542,3 +542,246 @@ Cypress.Commands.add('createClassificationAndStore', (payload, overrides = {}) =
         return response;
     });
 });
+
+// ***********************************************
+// UPDATE BLOCK COUNTING API COMMANDS
+// ***********************************************
+
+/**
+ * Update Block Counting Question API Command
+ * @param {string} contentId - The content_id to update
+ * @param {Object} contentDetails - Updated content details payload
+ * @param {boolean} createNewVersion - Whether to create a new version (default: false)
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateBlockCounting', (contentId, contentDetails, createNewVersion = false, contentRowId = null) => {
+    const body = {
+        create_new_version: createNewVersion,
+        content_details: contentDetails
+    };
+
+    // Add content_row_id if provided
+    if (contentRowId !== null) {
+        body.content_row_id = contentRowId;
+    }
+
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/block-counting/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Block Counting with fixture
+ * @param {string} contentId - The content_id to update
+ * @param {string} fixturePath - Path to fixture file
+ * @param {boolean} createNewVersion - Whether to create a new version
+ * @param {Object} overrides - Optional field overrides
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateBlockCountingFromFixture', (contentId, fixturePath, createNewVersion = false, overrides = {}, contentRowId = null) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        const contentDetails = { ...payload, ...overrides };
+        return cy.updateBlockCounting(contentId, contentDetails, createNewVersion, contentRowId);
+    });
+});
+
+// ***********************************************
+// UPDATE SEQUENCING API COMMANDS
+// ***********************************************
+
+/**
+ * Update Sequencing Question API Command
+ * @param {string} contentId - The content_id to update
+ * @param {Object} contentDetails - Updated content details payload
+ * @param {boolean} createNewVersion - Whether to create a new version (default: false)
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateSequencing', (contentId, contentDetails, createNewVersion = false, contentRowId = null) => {
+    const body = {
+        create_new_version: createNewVersion,
+        content_details: contentDetails
+    };
+
+    // Add content_row_id if provided
+    if (contentRowId !== null) {
+        body.content_row_id = contentRowId;
+    }
+
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/sequencing/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Sequencing with fixture
+ * @param {string} contentId - The content_id to update
+ * @param {string} fixturePath - Path to fixture file
+ * @param {boolean} createNewVersion - Whether to create a new version
+ * @param {Object} overrides - Optional field overrides
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateSequencingFromFixture', (contentId, fixturePath, createNewVersion = false, overrides = {}, contentRowId = null) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        const contentDetails = { ...payload, ...overrides };
+        return cy.updateSequencing(contentId, contentDetails, createNewVersion, contentRowId);
+    });
+});
+
+// ***********************************************
+// UPDATE CLASSIFICATION API COMMANDS
+// ***********************************************
+
+/**
+ * Update Classification Question API Command
+ * @param {string} contentId - The content_id to update
+ * @param {Object} contentDetails - Updated content details payload
+ * @param {boolean} createNewVersion - Whether to create a new version (default: false)
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateClassification', (contentId, contentDetails, createNewVersion = false, contentRowId = null) => {
+    const body = {
+        create_new_version: createNewVersion,
+        content_details: contentDetails
+    };
+
+    // Add content_row_id if provided
+    if (contentRowId !== null) {
+        body.content_row_id = contentRowId;
+    }
+
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/classification/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Classification with fixture
+ * @param {string} contentId - The content_id to update
+ * @param {string} fixturePath - Path to fixture file
+ * @param {boolean} createNewVersion - Whether to create a new version
+ * @param {Object} overrides - Optional field overrides
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateClassificationFromFixture', (contentId, fixturePath, createNewVersion = false, overrides = {}, contentRowId = null) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        const contentDetails = { ...payload, ...overrides };
+        return cy.updateClassification(contentId, contentDetails, createNewVersion, contentRowId);
+    });
+});
+
+// ***********************************************
+// SELECTION GRID QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Selection Grid Question API Command
+ * @param {Object} payload - Selection Grid question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSelectionGrid', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/selection-grid',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Selection Grid with fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'selection-grid/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSelectionGridFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createSelectionGrid(payload, overrides);
+    });
+});
+
+/**
+ * Create Selection Grid and store content_id
+ * Creates Selection Grid question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Selection Grid question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createSelectionGridAndStore', (payload, overrides = {}) => {
+    return cy.createSelectionGrid(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_SELECTIONGRID_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_SELECTIONGRID_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// ***********************************************
+// UPDATE SELECTION GRID API COMMANDS
+// ***********************************************
+
+/**
+ * Update Selection Grid Question API Command
+ * @param {string} contentId - The content_id to update
+ * @param {Object} contentDetails - Updated content details payload
+ * @param {boolean} createNewVersion - Whether to create a new version (default: false)
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateSelectionGrid', (contentId, contentDetails, createNewVersion = false, contentRowId = null) => {
+    const body = {
+        create_new_version: createNewVersion,
+        content_details: contentDetails
+    };
+
+    // Add content_row_id if provided
+    if (contentRowId !== null) {
+        body.content_row_id = contentRowId;
+    }
+
+    return cy.request({
+        method: 'PUT',
+        url: `/api/content/v1/questions/selection-grid/${contentId}`,
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Update Selection Grid with fixture
+ * @param {string} contentId - The content_id to update
+ * @param {string} fixturePath - Path to fixture file
+ * @param {boolean} createNewVersion - Whether to create a new version
+ * @param {Object} overrides - Optional field overrides
+ * @param {string} contentRowId - Optional specific version to update
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('updateSelectionGridFromFixture', (contentId, fixturePath, createNewVersion = false, overrides = {}, contentRowId = null) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        const contentDetails = { ...payload, ...overrides };
+        return cy.updateSelectionGrid(contentId, contentDetails, createNewVersion, contentRowId);
+    });
+});

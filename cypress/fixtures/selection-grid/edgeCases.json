@@ -1,0 +1,172 @@
+{
+    "specialChars": {
+        "stem": "<p>Special characters test: @#$%^&*()_+-=[]{}|;':\",./<>?</p>",
+        "option_value": "Option with special chars: @#$%"
+    },
+    "unicodeStem": {
+        "stem": "<p>Unicode test: 你好 مرحبا Здравствуйте 🎉🎊</p>"
+    },
+    "sqlInjection": {
+        "stem": "<p>'; DROP TABLE questions; --</p>"
+    },
+    "xssAttempt": {
+        "stem": "<script>alert('XSS')</script><p>Test stem</p>"
+    },
+    "projectIdAsString": {
+        "project_id": "3"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "classAsInteger": {
+        "class": 6
+    },
+    "classAsString": {
+        "class": "6"
+    },
+    "duplicateOptionIndex": {
+        "column_a_options": [
+            {
+                "option_value": "Option 1",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "opt1.wav"
+                }
+            },
+            {
+                "option_value": "Option 2",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "opt2.wav"
+                }
+            }
+        ]
+    },
+    "mismatchedCorrectAnswer": {
+        "correct_answer": [
+            {
+                "column_a_index": 99,
+                "column_b_index": 99
+            }
+        ]
+    },
+    "shuffleAsString": {
+        "shuffle": "true"
+    },
+    "practiceQuestionAsString": {
+        "practice_question": "false"
+    },
+    "maxOptionsAsInteger": {
+        "max_options": 10
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "source_content_id": "Q12345"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "source_content_id": "Q12345"
+    },
+    "extraFields": {
+        "extra_field_1": "should be ignored",
+        "extra_field_2": 12345,
+        "random_data": {
+            "nested": "object"
+        }
+    },
+    "emptyOptionValue": {
+        "column_a_options": [
+            {
+                "option_value": "",
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "empty.wav"
+                }
+            }
+        ]
+    },
+    "nullOptionValue": {
+        "column_a_options": [
+            {
+                "option_value": null,
+                "option_index": 1,
+                "option_voiceover": {
+                    "en-IN": "null.wav"
+                }
+            }
+        ]
+    },
+    "zeroMaxOptions": {
+        "max_options": "0"
+    },
+    "negativeMaxOptions": {
+        "max_options": "-5"
+    },
+    "veryLargeMaxOptions": {
+        "max_options": "999999"
+    },
+    "emptyContext": {
+        "context": ""
+    },
+    "veryLongContext": {
+        "context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subjectNoAsString": {
+        "subject_no": "2"
+    },
+    "subjectNoAsInteger": {
+        "subject_no": 2
+    },
+    "negativeSubjectNo": {
+        "subject_no": -1
+    },
+    "zeroMaxScore": {
+        "max_score": 0
+    },
+    "negativeMaxScore": {
+        "max_score": -10
+    },
+    "veryLargeMaxScore": {
+        "max_score": 999999
+    },
+    "emptyTimeLimit": {
+        "time_limit": ""
+    },
+    "zeroTimeLimit": {
+        "time_limit": "0"
+    },
+    "negativeTimeLimit": {
+        "time_limit": "-5"
+    },
+    "timeLimitAsInteger": {
+        "time_limit": 10
+    },
+    "emptyExplanation": {
+        "explanation": ""
+    },
+    "emptyInstruction": {
+        "instruction": ""
+    },
+    "emptyStem": {
+        "stem": ""
+    },
+    "whitespaceOnlyStem": {
+        "stem": "   "
+    },
+    "emptyKeywordIds": {
+        "keyword_ids": []
+    },
+    "invalidKeywordIds": {
+        "keyword_ids": [
+            "invalid",
+            "ids"
+        ]
+    },
+    "duplicateKeywordIds": {
+        "keyword_ids": [
+            2,
+            8,
+            10
+        ]
+    }
+}
