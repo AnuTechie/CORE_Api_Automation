@@ -293,6 +293,158 @@ Cypress.Commands.add('createBlankAndStore', (payload, overrides = {}) => {
 });
 
 // ***********************************************
+// COUNTING QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Counting Question API Command
+ * @param {Object} payload - Counting question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createCounting', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/counting',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Counting from fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'counting/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createCountingFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createCounting(payload, overrides);
+    });
+});
+
+/**
+ * Create Counting and store content_id
+ * Creates Counting question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Counting question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createCountingAndStore', (payload, overrides = {}) => {
+    return cy.createCounting(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_COUNTING_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_COUNTING_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// ***********************************************
+// DROPDOWN QUESTION API COMMANDS
+// ***********************************************
+
+/**
+ * Create Dropdown Question API Command
+ * @param {Object} payload - Dropdown question payload
+ * @param {Object} overrides - Optional field overrides to merge with payload
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createDropdown', (payload, overrides = {}) => {
+    const body = { ...payload, ...overrides };
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/dropdown',
+        body: body,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false,
+    });
+});
+
+/**
+ * Create Dropdown from fixture
+ * Loads payload from fixture and allows overrides
+ * @param {string} fixturePath - Path to fixture file (e.g., 'dropdown/validPayload')
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createDropdownFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createDropdown(payload, overrides);
+    });
+});
+
+/**
+ * Create Dropdown and store content_id
+ * Creates Dropdown question and stores content_id in Cypress.env for later use
+ * @param {Object} payload - Dropdown question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createDropdownAndStore', (payload, overrides = {}) => {
+    return cy.createDropdown(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_DROPDOWN_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_DROPDOWN_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// =============================================
+// HOTTEXT QUESTION API COMMANDS
+// =============================================
+
+/**
+ * Create Hottext question via API
+ * @param {Object} payload - Hottext question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createHottext', (payload, overrides = {}) => {
+    const finalPayload = { ...payload, ...overrides };
+    
+    return cy.request({
+        method: 'POST',
+        url: '/api/content/v1/questions/hottext',
+        body: finalPayload,
+        headers: getAuthHeaders(),
+        failOnStatusCode: false
+    });
+});
+
+/**
+ * Create Hottext question from fixture with overrides
+ * @param {string} fixturePath - Path to fixture file (without .json extension)
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createHottextFromFixture', (fixturePath, overrides = {}) => {
+    return cy.fixture(fixturePath).then((payload) => {
+        return cy.createHottext(payload, overrides);
+    });
+});
+
+/**
+ * Create Hottext and store content IDs in environment
+ * @param {Object} payload - Hottext question payload
+ * @param {Object} overrides - Optional field overrides
+ * @returns {Cypress.Chainable} - API response
+ */
+Cypress.Commands.add('createHottextAndStore', (payload, overrides = {}) => {
+    return cy.createHottext(payload, overrides).then((response) => {
+        if (response.status === 201) {
+            Cypress.env('CREATED_HOTTEXT_CONTENT_ID', response.body.content_id);
+            Cypress.env('CREATED_HOTTEXT_CONTENT_ROW_ID', response.body.content_row_id);
+        }
+        return response;
+    });
+});
+
+// ***********************************************
 // DATABASE VERIFICATION COMMANDS
 // ***********************************************
 
