@@ -1,0 +1,225 @@
+{
+    "singleObject": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count the apples",
+        "stem": "<p>How many apples do you see?</p>",
+        "max_score": 1,
+        "testing_objective": "Count single object type",
+        "explanation": "There are 5 apples in total",
+        "object_data": [
+            {
+                "object_value": "Apple",
+                "total_count": 5,
+                "object_index": 1
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 5
+            }
+        ],
+        "shuffle": true,
+        "show_number": false
+    },
+    "multipleObjects": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count each type of object",
+        "stem": "<p>Count the fruits and bread items. How many of each are there?</p>",
+        "max_score": 2,
+        "testing_objective": "Count multiple object types",
+        "explanation": "Count each type separately",
+        "object_data": [
+            {
+                "object_value": "Apple",
+                "total_count": 5,
+                "object_index": 1
+            },
+            {
+                "object_value": "Bread",
+                "total_count": 6,
+                "object_index": 2
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 5
+            },
+            {
+                "object_index": 2,
+                "countable_value": 6
+            }
+        ],
+        "shuffle": true,
+        "show_number": false
+    },
+    "withShowNumber": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count the items with numbers shown",
+        "stem": "<p>Count the bread items shown below</p>",
+        "max_score": 1,
+        "testing_objective": "Counting with visual aid",
+        "explanation": "Numbers are displayed to help counting",
+        "object_data": [
+            {
+                "object_value": "Bread",
+                "total_count": 3,
+                "object_index": 1
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 3
+            }
+        ],
+        "shuffle": false,
+        "show_number": true
+    },
+    "withoutShuffle": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count without shuffling",
+        "stem": "<p>Count the apples in order</p>",
+        "max_score": 1,
+        "testing_objective": "Sequential counting",
+        "explanation": "Items remain in fixed order",
+        "object_data": [
+            {
+                "object_value": "Apple",
+                "total_count": 4,
+                "object_index": 1
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 4
+            }
+        ],
+        "shuffle": false,
+        "show_number": false
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "hi",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "वस्तुओं की गणना करें",
+        "stem": "<p>कितने सेब हैं?</p>",
+        "max_score": 1,
+        "testing_objective": "गिनती",
+        "explanation": "कुल 5 सेब हैं",
+        "object_data": [
+            {
+                "object_value": "Apple",
+                "total_count": 5,
+                "object_index": 1
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 5
+            }
+        ],
+        "shuffle": true,
+        "show_number": false
+    },
+    "withContainerIds": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count the items",
+        "stem": "<p>How many stars?</p>",
+        "max_score": 1,
+        "testing_objective": "Counting",
+        "explanation": "Count all visible items",
+        "object_data": [
+            {
+                "object_value": "Star",
+                "total_count": 8,
+                "object_index": 1
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 8
+            }
+        ],
+        "shuffle": true,
+        "show_number": false
+    },
+    "allValidObjects": {
+        "project_id": 1,
+        "question_type": "Counting",
+        "language_code": "en",
+        "context": "GJ",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Count all objects",
+        "stem": "<p>Count each type of object below</p>",
+        "max_score": 3,
+        "testing_objective": "Count multiple object types",
+        "explanation": "All object types demonstrated",
+        "object_data": [
+            {
+                "object_value": "Apple",
+                "total_count": 5,
+                "object_index": 1
+            },
+            {
+                "object_value": "Bread",
+                "total_count": 6,
+                "object_index": 2
+            },
+            {
+                "object_value": "Star",
+                "total_count": 8,
+                "object_index": 3
+            }
+        ],
+        "correct_answer": [
+            {
+                "object_index": 1,
+                "countable_value": 5
+            },
+            {
+                "object_index": 2,
+                "countable_value": 6
+            },
+            {
+                "object_index": 3,
+                "countable_value": 8
+            }
+        ],
+        "shuffle": true,
+        "show_number": false
+    }
+}

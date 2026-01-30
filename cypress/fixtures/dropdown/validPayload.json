@@ -1,0 +1,35 @@
+{
+    "project_id": 1,
+    "question_type": "Dropdown",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 2,
+    "class": "6",
+    "stem": "<div>Choose the correct option from the dropdown</div><div>Value: <select-dropdown id=\"d1\"></select-dropdown></div>",
+    "explanation": "Option B is the correct choice",
+    "max_score": 1,
+    "dropdown_details": [
+        {
+            "index": "d1",
+            "options": [
+                {
+                    "value": "Option A",
+                    "is_fixed": false
+                },
+                {
+                    "value": "Option B",
+                    "is_fixed": false
+                },
+                {
+                    "value": "Option C",
+                    "is_fixed": false
+                }
+            ]
+        }
+    ],
+    "correct_answer": {
+        "d1": [
+            "Option B"
+        ]
+    }
+}

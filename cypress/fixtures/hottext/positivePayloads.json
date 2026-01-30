@@ -1,0 +1,103 @@
+{
+    "singleSelection": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "Select one word",
+        "stem": "<p><hot-text id=\"ht1\">Word</hot-text> <hot-text id=\"ht2\" class=\"correct\">One</hot-text> <hot-text id=\"ht3\">Word</hot-text> <hot-text id=\"ht4\">Two</hot-text></p>",
+        "max_score": 1,
+        "explanation": "One is the correct answer",
+        "selection_type": "words",
+        "correct_answer": [
+            "ht2"
+        ]
+    },
+    "multipleSelections": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "Select multiple words",
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">First</hot-text> <hot-text id=\"ht2\">Middle</hot-text> <hot-text id=\"ht3\" class=\"correct\">Last</hot-text> <hot-text id=\"ht4\">End</hot-text></p>",
+        "max_score": 2,
+        "explanation": "First and Last are correct",
+        "selection_type": "words",
+        "correct_answer": [
+            "ht1",
+            "ht3"
+        ]
+    },
+    "letterSelection": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "Select specific letters",
+        "stem": "<p><hot-text id=\"lt1\" class=\"correct\">A</hot-text><hot-text id=\"lt2\">B</hot-text><hot-text id=\"lt3\">C</hot-text><hot-text id=\"lt4\" class=\"correct\">D</hot-text></p>",
+        "max_score": 2,
+        "explanation": "Letters A and D are selected",
+        "selection_type": "letters",
+        "correct_answer": [
+            "lt1",
+            "lt4"
+        ]
+    },
+    "sentenceSelection": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "Select correct sentences",
+        "stem": "<p><hot-text id=\"s1\" class=\"correct\">This is correct.</hot-text> <hot-text id=\"s2\">This is wrong.</hot-text> <hot-text id=\"s3\" class=\"correct\">This is also correct.</hot-text></p>",
+        "max_score": 2,
+        "explanation": "Sentences 1 and 3 are correct",
+        "selection_type": "sentences",
+        "correct_answer": [
+            "s1",
+            "s3"
+        ]
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "hi",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "सही शब्द चुनें",
+        "stem": "<p><hot-text id=\"ht1\">राज</hot-text> <hot-text id=\"ht2\" class=\"correct\">कुमार</hot-text> <hot-text id=\"ht3\">सिंह</hot-text></p>",
+        "max_score": 1,
+        "explanation": "कुमार सही उत्तर है",
+        "selection_type": "words",
+        "correct_answer": [
+            "ht2"
+        ]
+    },
+    "withKeywords": {
+        "project_id": 1,
+        "question_type": "Hottext",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 1,
+        "class": "6",
+        "instruction": "Select keywords",
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">Important</hot-text> <hot-text id=\"ht2\">text</hot-text> <hot-text id=\"ht3\" class=\"correct\">information</hot-text></p>",
+        "max_score": 2,
+        "explanation": "Important and information are keywords",
+        "selection_type": "words",
+        "correct_answer": [
+            "ht1",
+            "ht3"
+        ],
+        "keyword_ids": [1, 2, 3]
+    }
+}

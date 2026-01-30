@@ -1,0 +1,22 @@
+{
+    "project_id": 1,
+    "question_type": "Hottext",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 1,
+    "class": "6",
+    "instruction": "Select the correct words from the text",
+    "stem": "<p><hot-text id=\"ht1\">य</hot-text><hot-text id=\"ht2\" class=\"correct\">ह</hot-text> <hot-text id=\"ht3\">ए</hot-text>क <hot-text id=\"ht5\">उ</hot-text><hot-text id=\"ht6\">दा</hot-text><hot-text id=\"ht7\" class=\"correct\">ह</hot-text><hot-text id=\"ht8\">र</hot-text><hot-text id=\"ht9\">ण</hot-text> <hot-text id=\"ht10\">वा</hot-text><hot-text id=\"ht11\">क्य</hot-text> <hot-text id=\"ht12\" class=\"correct\">है</hot-text><hot-text id=\"ht13\">।</hot-text></p>",
+    "max_score": 3,
+    "testing_objective": "Assessing knowledge of word selection and comprehension",
+    "explanation": "The correct selections are 'ह', 'ह', and 'है' as they form meaningful words in the context.",
+    "selection_type": "custom",
+    "correct_answer": [
+        "ht2",
+        "ht7",
+        "ht12"
+    ],
+    "keyword_ids": [1, 8],
+    "remedial_instruction": "Review word selection patterns in Hindi text",
+    "misconception_explanation": "Students may confuse similar looking characters"
+}

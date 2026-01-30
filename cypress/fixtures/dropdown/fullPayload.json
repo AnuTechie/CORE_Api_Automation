@@ -1,0 +1,92 @@
+{
+    "project_id": 1,
+    "question_type": "Dropdown",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 2,
+    "class": "6",
+    "instruction": "Choose the correct comparison operator",
+    "stem": "<div>Choose '>, < or =' from the drop down between the numbers below.<br><br></div><div>85.40 <select-dropdown id=\"d1\"></select-dropdown> 85.04</div>",
+    "max_score": 1,
+    "explanation": "85.40 > 85.04<br><br> <table border=\"1\"> <tbody> <tr> <td> </td> <td>Tens</td> <td>Ones</td> <td>.</td> <td>Tenths</td> <td>Hundredths</td> </tr> <tr> <td>85.40</td> <td>8</td> <td>5</td> <td>.</td> <td>4</td> <td>0</td> </tr> <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr> <tr> <td>85.04</td> <td>8</td> <td>5</td> <td>.</td> <td>0</td> <td>4</td> </tr> </tbody> </table> <br><br>Hence 85.40 > 85.04",
+    "keyword_ids": [1, 8],
+    "remedial_instruction": "Review decimal comparison",
+    "misconception_explanation": "Students may confuse the decimal places",
+    "dropdown_details": [
+        {
+            "index": "d1",
+            "options": [
+                {
+                    "value": "abc",
+                    "is_fixed": false
+                },
+                {
+                    "value": "MNO",
+                    "is_fixed": false
+                },
+                {
+                    "value": "XYZ",
+                    "is_fixed": false
+                }
+            ]
+        },
+        {
+            "index": "d2",
+            "options": [
+                {
+                    "value": "123",
+                    "is_fixed": false
+                },
+                {
+                    "value": "456",
+                    "is_fixed": false
+                },
+                {
+                    "value": "567",
+                    "is_fixed": false
+                }
+            ]
+        },
+        {
+            "index": "d3",
+            "options": [
+                {
+                    "value": "TEST1",
+                    "is_fixed": false
+                },
+                {
+                    "value": "TEST2",
+                    "is_fixed": false
+                },
+                {
+                    "value": "TEST3",
+                    "is_fixed": false
+                }
+            ]
+        }
+    ],
+    "correct_answer": {
+        "d1": [
+            "abc"
+        ],
+        "d2": [
+            "456"
+        ],
+        "d3": [
+            "TEST3"
+        ]
+    },
+    "attributes": [
+        {
+            "id": "1",
+            "value": "Medium"
+        }
+    ],
+    "skill_trees": [
+        {
+            "id": "ST001",
+            "value": "S00017"
+        }
+    ],
+    "container_id": "container_1"
+}

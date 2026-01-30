@@ -1,0 +1,28 @@
+{
+    "project_id": 1,
+    "question_type": "Counting",
+    "language_code": "en",
+    "context": "GJ",
+    "subject_no": 2,
+    "class": "6",
+    "instruction": "Count the objects",
+    "stem": "<p>How many apples are there in the image?</p>",
+    "max_score": 1,
+    "testing_objective": "Basic counting",
+    "explanation": "Count each object carefully",
+    "object_data": [
+        {
+            "object_value": "Apple",
+            "total_count": 5,
+            "object_index": 1
+        }
+    ],
+    "correct_answer": [
+        {
+            "object_index": 1,
+            "countable_value": 5
+        }
+    ],
+    "shuffle": true,
+    "show_number": false
+}

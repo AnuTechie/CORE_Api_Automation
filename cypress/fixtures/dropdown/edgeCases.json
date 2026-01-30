@@ -1,0 +1,60 @@
+{
+    "specialChars": {
+        "stem": "<div>Select: @#$%^&*()_+-={}[]|\\:;\"'<>,. <select-dropdown id=\"d1\"></select-dropdown></div>"
+    },
+    "unicodeStem": {
+        "stem": "<div>गणना करें: Count items with unicode 中文 العربية <select-dropdown id=\"d1\"></select-dropdown></div>"
+    },
+    "sqlInjection": {
+        "stem": "<div>Test: ' OR '1'='1; DROP TABLE questions; -- <select-dropdown id=\"d1\"></select-dropdown></div>"
+    },
+    "xssAttempt": {
+        "stem": "<script>alert('XSS')</script><div>Select <select-dropdown id=\"d1\"></select-dropdown></div>"
+    },
+    "projectIdAsString": {
+        "project_id": "1"
+    },
+    "negativeProjectId": {
+        "project_id": -1
+    },
+    "classAsInteger": {
+        "class": 6
+    },
+    "extraFields": {
+        "extra_field_1": "should_be_ignored",
+        "extra_field_2": 12345
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "origin_content_row_id": "original_row_123"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "origin_content_row_id": "original_row_456"
+    },
+    "largeNumberOfOptions": {
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {"value": "Option 1", "is_fixed": false},
+                    {"value": "Option 2", "is_fixed": false},
+                    {"value": "Option 3", "is_fixed": false},
+                    {"value": "Option 4", "is_fixed": false},
+                    {"value": "Option 5", "is_fixed": false},
+                    {"value": "Option 6", "is_fixed": false},
+                    {"value": "Option 7", "is_fixed": false},
+                    {"value": "Option 8", "is_fixed": false},
+                    {"value": "Option 9", "is_fixed": false},
+                    {"value": "Option 10", "is_fixed": false}
+                ]
+            }
+        ]
+    },
+    "verylongStem": {
+        "stem": "<div>Count the following: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA <select-dropdown id=\"d1\"></select-dropdown></div>"
+    },
+    "emptyValue": {
+        "value": ""
+    }
+}

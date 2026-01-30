@@ -1,0 +1,63 @@
+{
+    "specialChars": {
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">Test @#$%^&*()</hot-text> <hot-text id=\"ht2\">content</hot-text></p>"
+    },
+    "unicodeStem": {
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">गणना</hot-text> <hot-text id=\"ht2\">करें</hot-text> <hot-text id=\"ht3\">中文</hot-text> <hot-text id=\"ht4\" class=\"correct\">العربية</hot-text></p>"
+    },
+    "sqlInjection": {
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">Test ' OR '1'='1</hot-text> <hot-text id=\"ht2\">DROP TABLE</hot-text></p>"
+    },
+    "xssAttempt": {
+        "stem": "<p><script>alert('XSS')</script><hot-text id=\"ht1\" class=\"correct\">Safe</hot-text></p>"
+    },
+    "emptySelection": {
+        "correct_answer": []
+    },
+    "duplicateSelection": {
+        "correct_answer": [
+            "ht1",
+            "ht1",
+            "ht2"
+        ]
+    },
+    "invalidSelectionId": {
+        "correct_answer": [
+            "nonexistent",
+            "ht1"
+        ]
+    },
+    "selectionTypeLetters": {
+        "selection_type": "letters",
+        "correct_answer": [
+            "ht1",
+            "ht2"
+        ]
+    },
+    "selectionTypeSentences": {
+        "selection_type": "sentences",
+        "stem": "<p><hot-text id=\"ht1\">First sentence.</hot-text> <hot-text id=\"ht2\">Second sentence.</hot-text></p>",
+        "correct_answer": [
+            "ht1",
+            "ht2"
+        ]
+    },
+    "contentOriginCopy": {
+        "content_origin_type": "copy",
+        "origin_content_row_id": "original_row_123"
+    },
+    "contentOriginVariant": {
+        "content_origin_type": "variant",
+        "origin_content_row_id": "original_row_456"
+    },
+    "largeHottextCount": {
+        "stem": "<p><hot-text id=\"ht1\" class=\"correct\">W1</hot-text> <hot-text id=\"ht2\">W2</hot-text> <hot-text id=\"ht3\" class=\"correct\">W3</hot-text> <hot-text id=\"ht4\">W4</hot-text> <hot-text id=\"ht5\" class=\"correct\">W5</hot-text> <hot-text id=\"ht6\">W6</hot-text> <hot-text id=\"ht7\" class=\"correct\">W7</hot-text> <hot-text id=\"ht8\">W8</hot-text> <hot-text id=\"ht9\" class=\"correct\">W9</hot-text> <hot-text id=\"ht10\">W10</hot-text></p>",
+        "correct_answer": [
+            "ht1",
+            "ht3",
+            "ht5",
+            "ht7",
+            "ht9"
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "project_id": 1,
+    "question_type": "Counting",
+    "language_code": "en",
+    "context": "GJ",
+    "subject_no": 2,
+    "class": "6",
+    "instruction": "Count all objects carefully",
+    "stem": "<p>Renu poured 1250 ml of water into a jar. Only two measurement numbers on the jar can be seen. Which of the following shows Renu's jar with 1250 ml of water?</p>",
+    "max_score": 1,
+    "testing_objective": "Read the scale correctly",
+    "explanation": "Look at the scale markings to identify the correct level",
+    "object_data": [
+        {
+            "object_value": "Apple",
+            "total_count": 5,
+            "object_index": 1
+        },
+        {
+            "object_value": "Bread",
+            "total_count": 6,
+            "object_index": 2
+        }
+    ],
+    "correct_answer": [
+        {
+            "object_index": 1,
+            "countable_value": 5
+        },
+        {
+            "object_index": 2,
+            "countable_value": 6
+        }
+    ],
+    "shuffle": true,
+    "show_number": false
+}

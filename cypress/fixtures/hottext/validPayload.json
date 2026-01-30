@@ -1,0 +1,16 @@
+{
+    "project_id": 1,
+    "question_type": "Hottext",
+    "language_code": "en",
+    "context": "IN",
+    "subject_no": 1,
+    "class": "6",
+    "stem": "<p><hot-text id=\"ht1\">The</hot-text> <hot-text id=\"ht2\" class=\"correct\">quick</hot-text> <hot-text id=\"ht3\">brown</hot-text> <hot-text id=\"ht4\" class=\"correct\">fox</hot-text> <hot-text id=\"ht5\">jumps</hot-text>.</p>",
+    "explanation": "The correct words are 'quick' and 'fox' because they are adjectives describing the noun.",
+    "max_score": 1,
+    "selection_type": "words",
+    "correct_answer": [
+        "ht2",
+        "ht4"
+    ]
+}

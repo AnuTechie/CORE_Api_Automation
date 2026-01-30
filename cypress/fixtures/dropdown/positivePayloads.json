@@ -1,0 +1,238 @@
+{
+    "singleDropdown": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Select one option",
+        "stem": "<div>Pick from dropdown: <select-dropdown id=\"d1\"></select-dropdown></div>",
+        "max_score": 1,
+        "explanation": "Option 2 is correct",
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "Option 1",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Option 2",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Option 3",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "Option 2"
+            ]
+        }
+    },
+    "multipleDropdowns": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Select from multiple dropdowns",
+        "stem": "<div>Select values: <select-dropdown id=\"d1\"></select-dropdown> and <select-dropdown id=\"d2\"></select-dropdown></div>",
+        "max_score": 2,
+        "explanation": "Both selections are correct",
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "Choice A",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Choice B",
+                        "is_fixed": false
+                    }
+                ]
+            },
+            {
+                "index": "d2",
+                "options": [
+                    {
+                        "value": "Value 1",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Value 2",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "Choice A"
+            ],
+            "d2": [
+                "Value 2"
+            ]
+        }
+    },
+    "withFixedOptions": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "Select with fixed options",
+        "stem": "<div>Choose: <select-dropdown id=\"d1\"></select-dropdown></div>",
+        "max_score": 1,
+        "explanation": "Fixed option is selected",
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "Fixed Option",
+                        "is_fixed": true
+                    },
+                    {
+                        "value": "Option A",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Option B",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "Fixed Option"
+            ]
+        }
+    },
+    "hindiLanguage": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "hi",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "विकल्प चुनें",
+        "stem": "<div>ड्रॉपडाउन से चुनें: <select-dropdown id=\"d1\"></select-dropdown></div>",
+        "max_score": 1,
+        "explanation": "विकल्प 2 सही है",
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "विकल्प 1",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "विकल्प 2",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "विकल्प 2"
+            ]
+        }
+    },
+    "withAttributes": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "With attributes",
+        "stem": "<div>Select: <select-dropdown id=\"d1\"></select-dropdown></div>",
+        "max_score": 1,
+        "explanation": "Correct selection",
+        "attributes": [
+            {
+                "id": "1",
+                "value": "Easy"
+            },
+            {
+                "id": "2",
+                "value": "Important"
+            }
+        ],
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "A",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "B",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "A"
+            ]
+        }
+    },
+    "withSkillTrees": {
+        "project_id": 1,
+        "question_type": "Dropdown",
+        "language_code": "en",
+        "context": "IN",
+        "subject_no": 2,
+        "class": "6",
+        "instruction": "With skill trees",
+        "stem": "<div>Choose: <select-dropdown id=\"d1\"></select-dropdown></div>",
+        "max_score": 1,
+        "explanation": "Skill tree mapped",
+        "skill_trees": [
+            {
+                "id": "ST001",
+                "value": "S00017"
+            },
+            {
+                "id": "ST002",
+                "value": "S00018"
+            }
+        ],
+        "dropdown_details": [
+            {
+                "index": "d1",
+                "options": [
+                    {
+                        "value": "Answer 1",
+                        "is_fixed": false
+                    },
+                    {
+                        "value": "Answer 2",
+                        "is_fixed": false
+                    }
+                ]
+            }
+        ],
+        "correct_answer": {
+            "d1": [
+                "Answer 1"
+            ]
+        }
+    }
+}
